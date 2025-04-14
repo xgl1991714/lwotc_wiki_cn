@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Mechanics (LWOTC) - UFOpaedia
+  </title>
+  <link href="../css/6472dd69a77377bf32958b9120f87388.css" rel="stylesheet"/>
+  <meta content="MediaWiki 1.35.4" name="generator"/>
+ </head>
+ <body>
+  <div class="mw-body" id="content" role="main">
+   <a id="top">
+   </a>
+   <div class="mw-body-content" id="siteNotice">
+   </div>
+   <div class="mw-indicators mw-body-content">
+   </div>
+   <h1 class="firstHeading" id="firstHeading" lang="en">
+    Mechanics (LWOTC)
+   </h1>
+   <div class="mw-body-content" id="bodyContent">
+    <div id="jump-to-nav">
+    </div>
+    <a class="mw-jump-link" href="#mw-head">
+     Jump to navigation
+    </a>
+    <a class="mw-jump-link" href="#searchInput">
+     Jump to search
+    </a>
+    <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en">
+     <div class="mw-parser-output">
+      <p>
+       <a href="../index.html" title="Long War of the Chosen">
+        Back To Main Page
+       </a>
+      </p>
+      <div style="float:right">
+       <div>
+        <div style="padding-left: 20px;">
+         <div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation">
+          <input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/>
+          <div class="toctitle" dir="ltr" lang="en">
+           <h2 id="mw-toc-heading">
+            Contents
+           </h2>
+           <span class="toctogglespan">
+            <label class="toctogglelabel" for="toctogglecheckbox">
+            </label>
+           </span>
+          </div>
+          <ul>
+           <li class="toclevel-1 tocsection-1">
+            <a href="#To-Hit_Mechanics">
+             <span class="tocnumber">
+              1
+             </span>
+             <span class="toctext">
+              To-Hit Mechanics
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-2">
+            <a href="#Movement">
+             <span class="tocnumber">
+              2
+             </span>
+             <span class="toctext">
+              Movement
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-3">
+            <a href="#Enemy_Patrol_Behavior">
+             <span class="tocnumber">
+              3
+             </span>
+             <span class="toctext">
+              Enemy Patrol Behavior
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-4">
+            <a href="#Enemy_Alert_Levels">
+             <span class="tocnumber">
+              4
+             </span>
+             <span class="toctext">
+              Enemy Alert Levels
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-5">
+            <a href="#Skyranger_Evac_Delay">
+             <span class="tocnumber">
+              5
+             </span>
+             <span class="toctext">
+              Skyranger Evac Delay
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-6">
+            <a href="#Status_Effects">
+             <span class="tocnumber">
+              6
+             </span>
+             <span class="toctext">
+              Status Effects
+             </span>
+            </a>
+            <ul>
+             <li class="toclevel-2 tocsection-7">
+              <a href="#Mental_Ailments">
+               <span class="tocnumber">
+                6.1
+               </span>
+               <span class="toctext">
+                Mental Ailments
+               </span>
+              </a>
+             </li>
+             <li class="toclevel-2 tocsection-8">
+              <a href="#Environmental_Effects">
+               <span class="tocnumber">
+                6.2
+               </span>
+               <span class="toctext">
+                Environmental Effects
+               </span>
+              </a>
+             </li>
+             <li class="toclevel-2 tocsection-9">
+              <a href="#Other">
+               <span class="tocnumber">
+                6.3
+               </span>
+               <span class="toctext">
+                Other
+               </span>
+              </a>
+             </li>
+            </ul>
+           </li>
+           <li class="toclevel-1 tocsection-10">
+            <a href="#Detection_Range">
+             <span class="tocnumber">
+              7
+             </span>
+             <span class="toctext">
+              Detection Range
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-11">
+            <a href="#Fatigue">
+             <span class="tocnumber">
+              8
+             </span>
+             <span class="toctext">
+              Fatigue
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-12">
+            <a href="#Explosive.2FAoE_Damage_Falloff">
+             <span class="tocnumber">
+              9
+             </span>
+             <span class="toctext">
+              Explosive/AoE Damage Falloff
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-13">
+            <a href="#Environmental_Damage">
+             <span class="tocnumber">
+              10
+             </span>
+             <span class="toctext">
+              Environmental Damage
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-14">
+            <a href="#Cover_Defense">
+             <span class="tocnumber">
+              11
+             </span>
+             <span class="toctext">
+              Cover Defense
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-15">
+            <a href="#Hacking">
+             <span class="tocnumber">
+              12
+             </span>
+             <span class="toctext">
+              Hacking
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-16">
+            <a href="#Overwatch.2FReaction_Rules">
+             <span class="tocnumber">
+              13
+             </span>
+             <span class="toctext">
+              Overwatch/Reaction Rules
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-17">
+            <a href="#Weapon_Modifications">
+             <span class="tocnumber">
+              14
+             </span>
+             <span class="toctext">
+              Weapon Modifications
+             </span>
+            </a>
+           </li>
+           <li class="toclevel-1 tocsection-18">
+            <a href="#Concealment">
+             <span class="tocnumber">
+              15
+             </span>
+             <span class="toctext">
+              Concealment
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div style="padding: 2px 40px 0 0;">
+         <div style="float:right">
+          <a href="../index.html" title="Long War of the Chosen Main Page">
+           <img alt="Long War of the Chosen Main Page" decoding="async" height="48" src="../images/thumb/d/d9/Lwotc.png/73px-Lwotc.png" width="73"/>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <h2>
+       <span class="mw-headline" id="To-Hit_Mechanics">
+        To-Hit Mechanics
+       </span>
+      </h2>
+      <p>
+       The following hit mechanics in Long War 2 have been modified:
+      </p>
+      <dl>
+       <dd>
+        Critical chance is no longer an absolute chance
+        <dl>
+         <dd>
+          In base XCOM 2 a 10% hit and 10% critical chance would land 10% of the time, and if it hit would always be a critical. This is no longer the case.
+         </dd>
+         <dd>
+          Dodge no longer supersedes crit. (In base XCOM 2 if dodge + crit chance was greater than hit, crit chance would be removed in favor of dodge.)
+         </dd>
+         <dd>
+          Soldiers can graze even if the target has no dodge (In base XCOM 2, grazes were only possible if the target had dodge stat)
+         </dd>
+         <dd>
+          These changes apply completely symmetrically to both sides
+         </dd>
+        </dl>
+       </dd>
+       <dd>
+        All units will now graze if their to-hit roll is “close” to the required to hit
+        <dl>
+         <dd>
+          This is referred to as the “Graze Band.” The measure of “close” is configurable in-game, and defaults to +/- 10%.
+         </dd>
+         <dd>
+          Example 1 : Base 70% chance to hit results in 60% chance of a normal damage hit and 20% chance of a graze. The displayed to hit is 70%.
+         </dd>
+         <dd>
+          Example 2 : Base 20% chance to hit results in 10% chance of a normal damage hit and a 20% chance of a graze. The displayed to hit is 20%.
+         </dd>
+        </dl>
+       </dd>
+       <dd>
+        Critical Hit Chance is now a chance to “promote” the damage type. A successful critical roll will:
+        <dl>
+         <dd>
+          Promote a graze hit to a regular damage hit
+         </dd>
+         <dd>
+          Promote a regular damage hit to a critical damage hit
+         </dd>
+        </dl>
+       </dd>
+       <dd>
+        Dodge Stat is now a chance to “demote” the damage type. A successful dodge roll will:
+        <dl>
+         <dd>
+          Demote critical damage hit to regular damage hit
+         </dd>
+         <dd>
+          Demote a regular damage hit to a graze
+         </dd>
+         <dd>
+          Demote a graze into a miss (configurable)
+         </dd>
+        </dl>
+       </dd>
+       <dd>
+        Good Angle Bonus Removed
+        <dl>
+         <dd>
+          The good angle bonus of XCom 2 vanilla is removed, this bonus used to give you aim bonuses as you got closer to a flanking angle. There are no bonuses to aim and crit until you are fully flanking a target now.
+         </dd>
+        </dl>
+       </dd>
+       <dd>
+        Consequences:
+        <dl>
+         <dd>
+          Low % shots are generally more likely to do something, but that something results in less damage, and is very unlikely to deal critical damage
+         </dd>
+         <dd>
+          90% to-hit and above won’t entirely miss enemies (unless they have dodge)
+         </dd>
+         <dd>
+          Dodge and Crit counter each other, so a high critical chance helps counter high dodge units, while a good dodge helps protect against critical hits
+         </dd>
+         <dd>
+          When using Not Created Equally, soldiers may have negative dodge, increasing the chance hits against them will be promoted
+         </dd>
+        </dl>
+       </dd>
+       <dd>
+        Example 1: 90% to hit, 50% to crit
+        <dl>
+         <dd>
+          In base XCOM 2, this will result in Critical damage 50%, Normal damage 40% of the time, Miss 10% of the time.
+         </dd>
+         <dd>
+          In Long War 2, this will result in Critical damage 40% of the time, Normal damage 50% of the time, Graze damage 10% of the time.
+          <dl>
+           <dd>
+            Pre-critical results are 80% hit, 20% graze. Critical chance promotes half of the normal hits (40% of total) to critical, and half of the grazing hits (10% of total) to normal hits.
+           </dd>
+          </dl>
+         </dd>
+        </dl>
+       </dd>
+       <dd>
+        Example 2: 20% to hit, 10% to crit
+        <dl>
+         <dd>
+          In base XCOM 2, this will result in Critical damage 10% of the time, Normal damage 10% of the time, Miss 80% of the time
+         </dd>
+         <dd>
+          In Long War 2, it will result in Critical damage 1% of the time, Normal damage 11% of the time, Graze damage 18% of the time, Miss 70% of the time
+          <dl>
+           <dd>
+            Pre-critical results are 10% hit, 20% graze. Critical chance promotes one tenth of hits so 1% normal hits become critical, 2% grazing hits become normal.
+           </dd>
+          </dl>
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <h2>
+       <span class="mw-headline" id="Movement">
+        Movement
+       </span>
+      </h2>
+      <p>
+       How far can my operatives move with their mobility?
+      </p>
+      <dl>
+       <dd>
+        After all modifiers of equipment, the number of tiles in a linear direction a soldier can move become:
+       </dd>
+       <dd>
+        <b>
+         Mobility: (
+         <i>
+          blue move/yellow move
+         </i>
+         )
+        </b>
+       </dd>
+      </dl>
+      <ul>
+       <li>
+        10: 6/7
+       </li>
+       <li>
+        11: 7/7
+       </li>
+       <li>
+        12: 8/8
+       </li>
+       <li>
+        13: 8/9
+       </li>
+       <li>
+        14: 9/9
+       </li>
+       <li>
+        15: 10/10
+       </li>
+       <li>
+        16: 10/11
+       </li>
+       <li>
+        17: 11/11
+       </li>
+       <li>
+        18: 12/12
+       </li>
+       <li>
+        19: 12/13
+       </li>
+       <li>
+        20: 13/13
+       </li>
+       <li>
+        21: 14/14
+       </li>
+       <li>
+        22: 14/15
+       </li>
+       <li>
+        23: 15/15
+       </li>
+      </ul>
+      <p>
+       So if blue movements are most important, the movement numbers to aim for are: 12,14,15,17,18,20,21 and 23
+      </p>
+      <h2>
+       <span class="mw-headline" id="Enemy_Patrol_Behavior">
+        Enemy Patrol Behavior
+       </span>
+      </h2>
+      <p>
+       To truly understand how patrols in LW2 are different, it's important to understand how they were in vanilla.
+      </p>
+      <dl>
+       <dd>
+        In vanilla, there would always be one pod that would be stationed between XCOM and the objective. If that pod was killed, another pod would move to come between XCOM and the objective. Even if the pods were not active, they would, in a way, know where XCOM was. In similar fashion, pod patrol routes would dynamically adjust based on the location of XCOM.
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        These mechanics have been done away with, and the patrol zones use a fixed line-of-play based on the objective position and XCOM's original spawn point; there are no longer updates based on current XCOM position
+        <a class="external text" href="https://www.reddit.com/r/Xcom/comments/5qad3f/used_stealth_to_move_a_10man_squad_across_a_heavy/" rel="nofollow" target="_blank">
+         (source).
+        </a>
+       </dd>
+      </dl>
+      <h2>
+       <span class="mw-headline" id="Enemy_Alert_Levels">
+        Enemy Alert Levels
+       </span>
+      </h2>
+      <p>
+       In Long War 2, enemy vigilance is more complex than in vanilla.
+      </p>
+      <dl>
+       <dd>
+        <b>
+         Green Alert Mode
+        </b>
+        <dl>
+         <dd>
+          Green alert level is most commonly the beginning of a mission when a squad is still in concealment. Advent has no idea that XCOM has infiltrated and as such, is on low alert. A pod activated on the alien turn in this state may take defensive actions (each unit has a percentage chance that scales with difficulty) such as hunkering or overwatch on activation, but will not make any offensive moves. In other words, they will not get a chance to take a free shot at XCOM.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Yellow Alert Mode
+        </b>
+        <dl>
+         <dd>
+          An enemy pod at Yellow alert level is not activated yet. However, it is aware of XCOM activity in the area due to sound from rocket/grenade explosions, gun shots, yelling civilians, or by finding the corpses of dead allies. Pods at this alert level will move toward any suspicious sounds they hear. If a pod is activated on an enemy turn, they may take opportunistic shots at XCOM or perform other such actions as they scamper for cover. Patrols in yellow alert run instead of walk, and may take certain actions (such as Sectoid's
+          <a href="../pages/Perk_List_(LWOTC).html#Psi_Reanimation" title="Perk List (LWOTC)">
+           Psi Reanimation
+          </a>
+          ) even when not activated. You can use sound to create a diversion and draw pods away if you are attempting to stealth a mission or draw pods into your overwatch traps.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <dl>
+         <dd>
+          See the
+          <a href="../pages/Sounds_(LWOTC).html" title="Sounds (LWOTC)">
+           Sounds
+          </a>
+          subpage for details.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Red Alert Mode
+        </b>
+        <dl>
+         <dd>
+          This is an activated pod.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <h2>
+       <span class="mw-headline" id="Skyranger_Evac_Delay">
+        Skyranger Evac Delay
+       </span>
+      </h2>
+      <p>
+       After calling for Evac, the Skyranger will not arrive immediately. Instead, the soldier will throw an Evac flare at the selected zone, and it will take a number of turns before the Evac zone is fully active:
+      </p>
+      <ul>
+       <li>
+        Each difficulty has a base Evac Delay turns associated:
+       </li>
+      </ul>
+      <table class="wikitable" style="text-align: center">
+       <tbody>
+        <tr>
+         <th>
+          Rookie
+         </th>
+         <th>
+          Veteran
+         </th>
+         <th>
+          Commander
+         </th>
+         <th>
+          Legend
+         </th>
+        </tr>
+        <tr>
+         <td>
+          1
+         </td>
+         <td>
+          3
+         </td>
+         <td>
+          4
+         </td>
+         <td>
+          5
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <ul>
+       <li>
+        Having a large amount of soldiers in the squad will increase Evac Delay turns:
+       </li>
+      </ul>
+      <table class="wikitable" style="text-align: center">
+       <tbody>
+        <tr>
+         <td>
+          <b>
+           Squad Size
+          </b>
+         </td>
+         <td>
+          7-
+         </td>
+         <td>
+          8
+         </td>
+         <td>
+          9
+         </td>
+         <td>
+          10
+         </td>
+         <td>
+          11
+         </td>
+         <td>
+          12+
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <b>
+           Evac Delay Turns
+          </b>
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          +1
+         </td>
+         <td>
+          +2
+         </td>
+         <td>
+          +2
+         </td>
+         <td>
+          +3
+         </td>
+         <td>
+          +3
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <ul>
+       <li>
+        The infiltration value of the squad at the moment of starting the mission will either increase or decrease Evac Delay turns:
+       </li>
+      </ul>
+      <table class="wikitable" style="text-align: center">
+       <tbody>
+        <tr>
+         <td>
+          <b>
+           Infiltration Value
+          </b>
+         </td>
+         <td>
+          0%
+         </td>
+         <td>
+          30%
+         </td>
+         <td>
+          60%
+         </td>
+         <td>
+          100%
+         </td>
+         <td>
+          150%
+         </td>
+         <td>
+          200%
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <b>
+           Evac Delay Turns
+          </b>
+         </td>
+         <td>
+          +3
+         </td>
+         <td>
+          +2
+         </td>
+         <td>
+          +1
+         </td>
+         <td>
+          0
+         </td>
+         <td>
+          -1
+         </td>
+         <td>
+          -2
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <ul>
+       <li>
+        If there are 7 or more missions being infiltrated (including the one being launched) the Evac Delay will increase by 1 turn.
+       </li>
+       <li>
+        If the commanding
+        <a href="https://www.ufopaedia.org/index.php?title=Officers_(LW2)" target="_blank" title="Officers (LW2)">
+         officer
+        </a>
+        of the squad has
+        <a href="https://www.ufopaedia.org/index.php?title=Perk_List_(LW2)#Air_Controller" title="Perk List (LW2)">
+         Air Controller
+        </a>
+        the Evac Delay will decrease by 2 turns.
+       </li>
+       <li>
+        Redeploying the Evac flare after having already called for Evac will increase the Evac Delay by 2 turns.
+       </li>
+       <li>
+        Evac Delay cannot be lower than 1 turn or higher than 10 turns.
+       </li>
+      </ul>
+      <h2>
+       <span class="mw-headline" id="Status_Effects">
+        Status Effects
+       </span>
+      </h2>
+      <h3>
+       <span class="mw-headline" id="Mental_Ailments">
+        Mental Ailments
+       </span>
+      </h3>
+      <dl>
+       <dd>
+        <b>
+         Disoriented
+        </b>
+        <dl>
+         <dd>
+          Disoriented units have -20 Aim, -6 mobility, and -20 will defense, and cannot use most abilities. Disoriented units may still move, shoot, and overwatch. These effects last until the end of the next friendly turn. Disorient will break overwatch and suppression when applied to a unit currently doing those actions. If Sectoids and Gatekeepers are hit they will lose any mind controls and their Psi Zombies will be destroyed. Disorient on a mind-controlled unit will not free them.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Stunned
+        </b>
+        <dl>
+         <dd>
+          Stunned units lose (stun count) actions (Stun 2 = -2 actions/1 turn). Stunning a Sectoid or Gatekeeper will release any mind controls they have active, destroying their Psi Zombies.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Panick
+        </b>
+        <dl>
+         <dd>
+          Panicked units lose their turn and may hunker if possible. This cannot be re-applied to extend the duration. Units do not lose or have their reaction attacks cancelled but can react against allies and have a -35 aim penalty. Certain "battle madness" effects can trigger from special events such as a bondmate dying or a fear triggering. Shattered is the same as basic panic where the unit will simply hunker. Berserk makes the soldier go into a frenzy and perform random offensive actions. Obsessed only triggers from fears of an enemy and forces the soldier to approach them and unload their weapon against them.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Unconscious
+        </b>
+        <dl>
+         <dd>
+          The unit is knocked out for the rest of the mission, can be revived with skills that heal mental ailments or get up (xcom).
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Mind Control
+        </b>
+        <dl>
+         <dd>
+          The unit is being psionically controlled by another unit, forcing them to join the enemy and attack their allies. The effect lasts 3-turns.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <h3>
+       <span class="mw-headline" id="Environmental_Effects">
+        Environmental Effects
+       </span>
+      </h3>
+      <dl>
+       <dd>
+        <b>
+         Burning
+        </b>
+        <dl>
+         <dd>
+          Burn deals 1-3 damage per turn, lasts two turns, and lockout of most abilities. They can not perform ranged attacks or use most special abilities, but can still do directly adjacent melee attacks (for example stun lance would not be available as it is a dashing melee attack regardless if they are directly adjacent or not). This can be cured by running through water tiles. Hunker down does not remove this.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Poisoned
+        </b>
+        <dl>
+         <dd>
+          Poisoned units have a -20 Aim, -4 mobility, and takes 1 damage at the start of their turn. The effect will last for 2 turns.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Acid Burn
+        </b>
+        <dl>
+         <dd>
+          Deals 1-3 damage per turn. Lasts 1 turn.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Frozen
+        </b>
+        <dl>
+         <dd>
+          Frozen units lose their turn and also lose 10 defense. Certain units are only partially affected and will defrost at the beginning of their turn but loses one of their action points. A frozen unit cannot be stunned.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <h3>
+       <span class="mw-headline" id="Other">
+        Other
+       </span>
+      </h3>
+      <dl>
+       <dd>
+        <b>
+         Chryssalid Poison
+        </b>
+        <dl>
+         <dd>
+          Deals damage based on the level of the inflictor (Hive queen's poison will deal more than a basic chryssalid) and will persist for the rest of the mission until healed. If the unit dies while afflicted, a cocoon will spawn that creates smaller chryssalids. Medkit's poison immunity does not prevent this from applying but does prevent from being damaged by it.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Defensive Smoke
+        </b>
+        <dl>
+         <dd>
+          Grants all units within the smoke +20 defense and immunity to flanking critical bonus. Lasts for 3 turns. Smoke will grant an additional 10 defense with the
+          <a href="../pages/Perk_List_(LWOTC).html#Dense_Smoke" title="Perk List (LWOTC)">
+           Dense Smoke
+          </a>
+          perk.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Maim
+        </b>
+        <dl>
+         <dd>
+          The affilicted unit has 0 mobility and lasts for the turn.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Bleeding
+        </b>
+        <dl>
+         <dd>
+          Bleeding units take 1 damage per turn. Lasts 2 turns.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <dl>
+       <dd>
+        <b>
+         Rupture
+        </b>
+        <dl>
+         <dd>
+          Ruptured units take an additional (rupture count) damage from all sources for the rest of the mission. Cannot be removed.
+         </dd>
+        </dl>
+       </dd>
+      </dl>
+      <h2>
+       <span class="mw-headline" id="Detection_Range">
+        Detection Range
+       </span>
+      </h2>
+      <p>
+       The radius at which enemies can detect you in concealment is called the Detection Range, and this scales based on a variety of factors. Be aware that detection tiles do not appear on obstacles that can be walked across such as benches. Large Units also tends to have slightly misleading detection and may be slightly larger than it appears.
+      </p>
+      <p>
+       <b>
+        Infiltration level
+       </b>
+      </p>
+      <p>
+       At baseline 100% infiltration, enemies will have their normal detection range.  At infiltration rates below 100%, the enemy will have between between x1 and x1.25 of normal detection radius (i.e up to 1/4th more); conversely, at infiltration rates above 100%, the enemy will have between x1 and x0.8334 of normal detection radius (i.e. up to 1/6th less).  The effect scales linearly; for example, at 50% Infiltration, enemy detection range gets a 1/8 bonus (half the maximum bonus of 1/4).
+      </p>
+      <ul>
+       <li>
+        &lt;100% Infiltration: Base * [1 + ((100% - Infil%) x 1/4)]
+       </li>
+       <li>
+        &gt;100% Infiltration: Base * [1 - ((Infil% - 100%) x 1/6)]
+       </li>
+      </ul>
+      <p>
+       <b>
+        Alert Level
+       </b>
+      </p>
+      <p>
+       In LWOTC, enemies on alert gain a bonus to detection as they become more aware of XCOM activities within the area.
+      </p>
+      <p>
+       Yellow Alert grants an additional +2 tiles of detection.
+      </p>
+      <p>
+       Red Alert grants an additional +4 tiles of detection.
+      </p>
+      <h2>
+       <span class="mw-headline" id="Fatigue">
+        Fatigue
+       </span>
+      </h2>
+      <ul>
+       <li>
+        Soldiers now grow fatigued when continuously participating in missions. A point of will is lost every three turns or every two turns when sent out while tired. They enter a tired state when their will reaches about 67% of their max will and require 7-12 days to recover. A soldier will be shaken after participating in a mission while tired and their will reaches about 33% or below and must recover for 20-24 days.
+       </li>
+       <li>
+        Soldiers will only recover will when they are idle and not doing any actions such as infiltrating.
+       </li>
+       <li>
+        Killing a civilian will decrease your will by 2.
+       </li>
+       <li>
+        Will loss from miscellaneous actions such as seeing enemies or taking damage has been removed.
+       </li>
+       <li>
+        Most random panic events have been removed and/or been restricted to shattered (classic panic state where unit hunkers).
+       </li>
+      </ul>
+      <h2>
+       <span id="Explosive/AoE_Damage_Falloff">
+       </span>
+       <span class="mw-headline" id="Explosive.2FAoE_Damage_Falloff">
+        Explosive/AoE Damage Falloff
+       </span>
+      </h2>
+      <p>
+       Long War makes explosives and some AoE attacks have damage falloff, decreasing the damage dealt against targets based on the distance from impact. Falloff can be removed with
+       <a href="../pages/Perk_List_(LWOTC).html#Tandem_Warheads" title="Perk List (LWOTC)">
+        Tandem Warheads
+       </a>
+       .
+      </p>
+      <p>
+       There are three tiers of potential damage falloff depending on distance from detonation point:
+None (up to half blast radius distance)
+25% (up to 75% of blast radius distance)
+50% (outermost 25%)
+      </p>
+      <p>
+       Initially rolled damage gets reduced by a random amount (starting at 0%) up to this potential damage falloff.
+      </p>
+      <p>
+       Resulting damage gets rounded down but cannot go lower than 1.
+      </p>
+      <h2>
+       <span class="mw-headline" id="Environmental_Damage">
+        Environmental Damage
+       </span>
+      </h2>
+      <p>
+       There are 3 kinds of destructible objects which all have some "toughness", or can be seen as "environmental health", that determines how much damage needs to be dealt before they are destroyed.
+      </p>
+      <ul>
+       <li>
+        Simple destructibles: have a single toughness value where enough damage instantly destroys the object. ex. tables or wooden fences
+       </li>
+       <li>
+        Fractional destructibles: similar to simple destructibles but have multiple parts/stages which can be destroyed partially or completely based on the damage dealt. ex. walls or floors
+       </li>
+       <li>
+        Annihilation destructibles: these objects have two stages, damaged and annihilated. These objects have two toughness values. An example are cars where if enough damage is dealt they become damaged and continue to take damage over time until enough is dealt and becomes annihilated.
+       </li>
+      </ul>
+      <p>
+       Despite objects having a "toughness" value, this is not an actual health value but a threshold. An object cannot be eventually destroyed by doing so through multiple hits. Either enough environmental damage is dealt to change the object states or nothing occurs. One exception are targetable objects such as gas tanks or objectives.
+      </p>
+      <p>
+       Long War greatly changes the impact explosives and weapons have against the environment in the battlefield. Frag grenades have significantly lower environmental damage and very rarely destroys cover (this can be boosted with
+       <a href="../pages/Perk_List_(LWOTC).html#Sapper" title="Perk List (LWOTC)">
+        Sapper
+       </a>
+       and
+       <a href="../pages/Perk_List_(LWOTC).html#Combat_Engineer" title="Perk List (LWOTC)">
+        Combat Engineer
+       </a>
+       ). Enemy explosives however are slightly better than XCOM's and are more likely to destroy cover, be cautious of them. This makes cover more important on both sides and requires more careful consideration in 
+positioning.
+      </p>
+      <p>
+       In addition to this, just like with explosive damage, environmental damage also
+suffers damage falloff from the point of impact when using explosives making it more difficult to level out cover completely (this can be removed by using
+       <a href="../pages/Perk_List_(LWOTC).html#Combat_Engineer" title="Perk List (LWOTC)">
+        Combat Engineer
+       </a>
+       ).
+      </p>
+      <p>
+       Similar to how damage is dealt, there is also variance with 
+the environmental damage dealt ranging from +/- 20% spread.
+      </p>
+      <h2>
+       <span class="mw-headline" id="Cover_Defense">
+        Cover Defense
+       </span>
+      </h2>
+      <p>
+       In long war, cover defense is worth more and thus generally have more of an effect and important to use to stay safe. Low cover now grants 30 defense and high cover now grants 45 defense.
+      </p>
+      <h2>
+       <span class="mw-headline" id="Hacking">
+        Hacking
+       </span>
+      </h2>
+      <p>
+       Hacking is an ability that can be used for objectives or by the
+       <a href="../pages/Specialist_(LWOTC).html" title="Specialist (LWOTC)">
+        Specialist
+       </a>
+       class with their gremlin which can also be used on Advent Poles or against robotic enemies with
+       <a href="../pages/Perk_List_(LWOTC).html#Haywire_Protocol" title="Perk List (LWOTC)">
+        Haywire Protocol
+       </a>
+       . The hacking chance is based on the attacker's hacking score, the defender's hack defense, some amount of variance and various modifiers depending on what is being hacked and what the attempted result is. There are a few notes to keep in mind about hacking.
+      </p>
+      <ul>
+       <li>
+        A robotic enemy can only be hacked once per mission and cannot be re-attempted. This means that you can't continuously mind control a robotic enemy after it wears out or retry if you failed an attempt.
+       </li>
+       <li>
+        <a href="../pages/Perk_List_(LWOTC).html#Haywire_Protocol" title="Perk List (LWOTC)">
+         Haywire Protocol
+        </a>
+        and
+        <a href="../pages/Perk_List_(LWOTC).html#Full_Override" title="Perk List (LWOTC)">
+         Full Override
+        </a>
+        can target enemies within reasonable line of sight whether they are within their own vision or an alliles from squadsight. These abilities are not the same as hacking objectives or Advent Poles which requries the Specialists' own line of sight in order to begin hacking.
+       </li>
+       <li>
+        When hacking a jail cell during Jailbreaks, the doors are opened upon success and granting control of all the rookies/rebels within to begin escaping. This is not the case for VIP missions which require opening the door manually with a soldier and having the VIP within line of sight in order to take control of them and begin escaping.
+       </li>
+      </ul>
+      <p>
+       <br/>
+      </p>
+      <h2>
+       <span id="Overwatch/Reaction_Rules">
+       </span>
+       <span class="mw-headline" id="Overwatch.2FReaction_Rules">
+        Overwatch/Reaction Rules
+       </span>
+      </h2>
+      <p>
+       All units with a gun can enter "overwatch" allowing them to take a reactive shot against an enemy that moves at least two tiles within vision. All reaction attacks will suffer a 30% aim penalty meaning that an attack will have its final aim result multiplied by 0.7 to calculate the final hit chance. For example, if the attack would have an 80% chance to hit, the final result for a reactive attack would be 56%. For targets that are dashing, the penalty is increased to 40%.
+      </p>
+      <p>
+       There are optional changes that only apply if the
+       <b>
+        Revert Overwatch Rules Change
+       </b>
+       mod is
+       <b>
+        disabled
+       </b>
+       (note this is a leftover mechanic that was made during the beta of LWOTC but is no longer usedm use at own risk):
+      </p>
+      <ul>
+       <li>
+        Overwatch now triggers as soon as the unit moves, which makes it no longer possible to perform 1-tile moves to avoid overwatch. The implementation right now is not perfect and this change may not always function correctly, depending on factors like line of sight, although typically overwatch should now more consistently trigger as targets move or step into range.
+       </li>
+       <li>
+        This change makes it easier to trigger overwatch while in cover, but overwatch shots now ignore 25 cover defense.
+       </li>
+      </ul>
+      <h2>
+       <span class="mw-headline" id="Weapon_Modifications">
+        Weapon Modifications
+       </span>
+      </h2>
+      <p>
+       Weapon mods can be obtained through enemy loot drops similarly to the base game. All weapons have 3 available weapon slots and can be freely equipped and removed from them. The plasma rifle is unique in that it has a special property allowing it to have 4 weapon slots.
+Some weapon mods occupy the same slots and are thus mutually exclusive. Scopes and lasers sights cannot be used together as well as expanded magazines with autoloaders.
+      </p>
+      <h2>
+       <span class="mw-headline" id="Concealment">
+        Concealment
+       </span>
+      </h2>
+      <p>
+       On some missions, the squad can start in concealment which enemies will not be able to detect them unless within a certain range. Concealment allows you to sneak around or set up positions for an ambush. Most offensive actions and noisy actions such as breaking through windows or ramming doors will reveal the squad and make ADVENT aware of xcom presence in the area allowing them to engage when in vision. An action will reveal the soldier or squad if there is a red eye icon in the UI when selecting the action.
+      </p>
+      <p>
+       During concealment there are a few additional bonuses that can be used offensively. Any overwatch set during concealment do not suffer overwatch penalties and will fire at the full aim the shot is capable of. Additionally, all enemies will behave as if they have 0 dodge (this does not mean graze band will not apply).
+      </p>
+      <!-- 
+NewPP limit report
+Cached time: 20250220020630
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.092 seconds
+Real time usage: 0.098 seconds
+Preprocessor visited node count: 79/1000000
+Post‐expand include size: 461/2097152 bytes
+Template argument size: 2/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+      <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   17.834      1 -total
+100.00%   17.834      1 Template:Toc_(LWOTC)
+ 29.45%    5.252      1 Template:Header_(LWOTC)
+-->
+      <!-- Saved in parser cache with key ufopaedia_wiki:pcache:idhash:20660-0!canonical and timestamp 20250220020630 and revision id 120955
+ -->
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+ <!-- Cached 20250220022112 -->
+</html>

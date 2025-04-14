@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="client-nojs" dir="ltr" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Bug/Features (LWOTC) - UFOpaedia
+  </title>
+  <link href="../css/f181969b354be6c9b5b21a015f979548.css" rel="stylesheet"/>
+  <meta content="MediaWiki 1.35.4" name="generator"/>
+ </head>
+ <body>
+  <div class="mw-body" id="content" role="main">
+   <a id="top">
+   </a>
+   <div class="mw-body-content" id="siteNotice">
+   </div>
+   <div class="mw-indicators mw-body-content">
+   </div>
+   <h1 class="firstHeading" id="firstHeading" lang="en">
+    Bug/Features (LWOTC)
+   </h1>
+   <div class="mw-body-content" id="bodyContent">
+    <div id="jump-to-nav">
+    </div>
+    <a class="mw-jump-link" href="#mw-head">
+     Jump to navigation
+    </a>
+    <a class="mw-jump-link" href="#searchInput">
+     Jump to search
+    </a>
+    <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en">
+     <div class="mw-parser-output">
+      <p>
+       <a href="../index.html" title="Long War of the Chosen">
+        Back To Main Page
+       </a>
+      </p>
+      <p>
+       These are bugs that are part of the game and can't be fixed or has not been addressed.
+      </p>
+      <h2>
+       <span class="mw-headline" id="Bugs">
+        Bugs
+       </span>
+      </h2>
+      <ul>
+       <li>
+        Trojan activates a turn later if the hack initiated from concealment (possibly linked to the taking control option)
+       </li>
+       <li>
+        Pillar may or may not grant cover to a unit when placed at their location. A unit typically needs to move into the cover for it to apply.
+       </li>
+       <li>
+        Psi training time does not properly scale with difficulty
+       </li>
+       <li>
+        Mind controlled chrysallids that kill enemies and spawns a cocoon may not produce more chrysallids (appears to be very inconsistent)
+       </li>
+       <li>
+        There is a bug in which the Chosen Avenger Defense can be unwinnable due to an objective bugging out due to destroyed terrain nearby the tanks making in unable to complete locking out the mission. There is no known solution and the only currently known work around is to have shadow and teleport to the objectives and complete them before it locks out.
+        <ul>
+         <li>
+          (Edit: in 1.0+, the trucks are now optional objectives and are not required to destroy in order to win the mission. Destroying them however can still be useful to slow down the destruction of the avenger.
+         </li>
+        </ul>
+       </li>
+       <li>
+        Faceless may sometimes appear invisible, not being able to see them despite being on the field. Reloading a save may help.
+       </li>
+       <li>
+        Opaque Ceiling Bug. Sometimes during a tactical gameplay players can't see anymore the inside of buildings because the ceilings stay opaque when zooming in. This is most often caused by the mod Quick Soldier Info when the option to take soldier pictures during missions is enabled and the player controls an enemy unit (hacking/mind control). The mod uses the ingame camera to take a picture of the new unit and this leads to this bug. Disabling the option will prevent that bug from happening. As far as I know reparing the bug mid mission is only possible by deactivating the mod.
+       </li>
+       <li>
+        Liberation 3 can instantly be detected upon respawn if previously detected and has expired.
+       </li>
+       <li>
+        Reloading a save during invasions can grant line of sight on the beacon allowing squadsight to target them regardless if any soldiers have actual sight of the objective or not.
+       </li>
+       <li>
+        Unable to launch avenger defense: for some people, the mod "quick soldier info" causes problems. try disabling this mod then re-attempt to launch the mission which can then be re-enabled afterwards.
+       </li>
+       <li>
+        Squad manager can bypass some mechanics that should not be intended such as a wounded soldier participating in missions they shouldn’t be able to or possibly changing loadouts when squads are infiltrating
+       </li>
+      </ul>
+      <h2>
+       <span id='"Features"'>
+       </span>
+       <span class="mw-headline" id=".22Features.22">
+        "Features"
+       </span>
+      </h2>
+      <ul>
+       <li>
+        Voice lines for certain objectives such as Bradford stating to clear the area do not match the actual mission objectives. Look at the actual objectives to know what you should do.
+       </li>
+       <li>
+        Limited ability to adjust the UI and voice lines means it may be misleading if a covert action fails. Check the reward screen to see if an actual reward is given and that it has stated "Failed" on whether the covert action has succeeded.
+       </li>
+       <li>
+        You cannot gain multiple intel caches ; EX. you will not receive 50 intel for doing two large intel caches but instead the base 25
+       </li>
+       <li>
+        Walls of full cover may not actually provide cover bonuses except for the edges in which soldiers peek out. EX. the center spots of fences or vans
+       </li>
+       <li>
+        Ever vigilant will not trigger if you perform any other action besides movement regardless of whether actions were spent or not. This can be fixed by using the reliable ever vigilant mod, note that other free actions such as those added by mods will need to be added to the config to function.
+       </li>
+       <li>
+        Ever vigilant defaults to using the pistol, this may be fixed by using the reliable ever vigilant mod
+       </li>
+       <li>
+        Suppression can affect units with shadowstep, they will not receive damage but having abilities or equipment that can inflict a status may apply such as venom rounds.
+       </li>
+       <li>
+        A unit that has been mind controlled while panicked or stunned may act immediately
+       </li>
+       <li>
+        Serial refunds actions from standard shots and not abilities. Can fix with the ability interaction fixes mod
+       </li>
+       <li>
+        Enemies can sometimes spawn inside jail cells along with VIPs
+       </li>
+       <li>
+        Detection tiles may sometimes disappear or just not appear despite having line of sight against enemies that can spot you.
+       </li>
+       <li>
+        Detection range on large enemies may be misleading and is slightly larger than given.
+       </li>
+       <li>
+        Armor pierce is not always correctly visualized when damage is shown. Unless all armor has been pierced, it still shows armor as if it was applied.
+       </li>
+       <li>
+        Pausing during the enemies' turn can disable autosaves.
+       </li>
+       <li>
+        Completing a Covert Action Ambush in an unconctacted region will show info of the region (strength, vigilance etc) and allowing you to scan in it. This doesn't have any actual benefits but leaving the region will turn it back to normal.
+       </li>
+       <li>
+        Evac on covert ambush can sometimes bug out and not function if they spawn outside the map, to solve do “enableglobalability placeevaczone” to grant the ability to create a new evac zone and then “lwforceevac” to instantly spawn.
+       </li>
+       <li>
+        Can work around broken evacs by using the console ; "x2useability evac" immediately evacs the selected soldier.
+       </li>
+       <li>
+        For weird bugs where soldiers are stuck tired or wounded for incredibly long times, use the console command "LWOTC_setselectedunitactive" to make them available.
+       </li>
+       <li>
+        Actual mobility may not always be correctly reflected on the barracks soldier screen, verify through the tactical layer if something is abnormal
+       </li>
+       <li>
+        Seeing missing textures/black units in the shell is a strange feature, does not affect (usually) actual models in game
+       </li>
+       <li>
+        The "Rebuildselectedsoldierclass" console command will alter the soldier's base stats.
+       </li>
+      </ul>
+      <!-- 
+NewPP limit report
+Cached time: 20240426023635
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.004 seconds
+Real time usage: 0.004 seconds
+Preprocessor visited node count: 6/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+      <!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+      <!-- Saved in parser cache with key ufopaedia_wiki:pcache:idhash:20572-0!canonical and timestamp 20240426023635 and revision id 118616
+ -->
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+ <!-- Cached 20240426053850 -->
+</html>
