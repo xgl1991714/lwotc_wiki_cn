@@ -17,7 +17,7 @@
    <div class="mw-indicators mw-body-content">
    </div>
    <h1 class="firstHeading" id="firstHeading" lang="en">
-    Mechanics (LWOTC)
+    机制(LWOTC)
    </h1>
    <div class="mw-body-content" id="bodyContent">
     <div id="jump-to-nav">
@@ -42,7 +42,7 @@
           <input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/>
           <div class="toctitle" dir="ltr" lang="en">
            <h2 id="mw-toc-heading">
-            Contents
+            内容目录
            </h2>
            <span class="toctogglespan">
             <label class="toctogglelabel" for="toctogglecheckbox">
@@ -56,7 +56,7 @@
               1
              </span>
              <span class="toctext">
-              To-Hit Mechanics
+              命中机制
              </span>
             </a>
            </li>
@@ -66,7 +66,7 @@
               2
              </span>
              <span class="toctext">
-              Movement
+              移动
              </span>
             </a>
            </li>
@@ -76,7 +76,7 @@
               3
              </span>
              <span class="toctext">
-              Enemy Patrol Behavior
+              敌方巡逻行为
              </span>
             </a>
            </li>
@@ -86,7 +86,7 @@
               4
              </span>
              <span class="toctext">
-              Enemy Alert Levels
+              敌方警戒等级
              </span>
             </a>
            </li>
@@ -96,7 +96,7 @@
               5
              </span>
              <span class="toctext">
-              Skyranger Evac Delay
+              天际游侠号撤离延迟
              </span>
             </a>
            </li>
@@ -106,7 +106,7 @@
               6
              </span>
              <span class="toctext">
-              Status Effects
+              状态效果
              </span>
             </a>
             <ul>
@@ -116,7 +116,7 @@
                 6.1
                </span>
                <span class="toctext">
-                Mental Ailments
+                精神异常
                </span>
               </a>
              </li>
@@ -126,7 +126,7 @@
                 6.2
                </span>
                <span class="toctext">
-                Environmental Effects
+                环境效果
                </span>
               </a>
              </li>
@@ -136,7 +136,7 @@
                 6.3
                </span>
                <span class="toctext">
-                Other
+                其他
                </span>
               </a>
              </li>
@@ -148,7 +148,7 @@
               7
              </span>
              <span class="toctext">
-              Detection Range
+              侦测范围
              </span>
             </a>
            </li>
@@ -158,7 +158,7 @@
               8
              </span>
              <span class="toctext">
-              Fatigue
+              疲劳
              </span>
             </a>
            </li>
@@ -168,7 +168,7 @@
               9
              </span>
              <span class="toctext">
-              Explosive/AoE Damage Falloff
+              爆炸/范围伤害衰减
              </span>
             </a>
            </li>
@@ -178,7 +178,7 @@
               10
              </span>
              <span class="toctext">
-              Environmental Damage
+              环境伤害
              </span>
             </a>
            </li>
@@ -188,7 +188,7 @@
               11
              </span>
              <span class="toctext">
-              Cover Defense
+              掩体防御
              </span>
             </a>
            </li>
@@ -198,7 +198,7 @@
               12
              </span>
              <span class="toctext">
-              Hacking
+              侵入
              </span>
             </a>
            </li>
@@ -208,7 +208,7 @@
               13
              </span>
              <span class="toctext">
-              Overwatch/Reaction Rules
+              监视/反应规则
              </span>
             </a>
            </li>
@@ -218,7 +218,7 @@
               14
              </span>
              <span class="toctext">
-              Weapon Modifications
+              武器插件
              </span>
             </a>
            </li>
@@ -228,7 +228,7 @@
               15
              </span>
              <span class="toctext">
-              Concealment
+              隐蔽
              </span>
             </a>
            </li>
@@ -246,121 +246,121 @@
       </div>
       <h2>
        <span class="mw-headline" id="To-Hit_Mechanics">
-        To-Hit Mechanics
+        命中机制
        </span>
       </h2>
       <p>
-       The following hit mechanics in Long War 2 have been modified:
+       以下是Long War 2中修改过的命中机制：
       </p>
       <dl>
        <dd>
-        Critical chance is no longer an absolute chance
+        暴击几率不再是绝对几率
         <dl>
          <dd>
-          In base XCOM 2 a 10% hit and 10% critical chance would land 10% of the time, and if it hit would always be a critical. This is no longer the case.
+          在原版XCOM 2中，10%的命中和10%的暴击几率意味着10%的命中率，并且一旦命中就一定是暴击。但现在情况不再如此。
          </dd>
          <dd>
-          Dodge no longer supersedes crit. (In base XCOM 2 if dodge + crit chance was greater than hit, crit chance would be removed in favor of dodge.)
+          闪避不再覆盖暴击（在原版XCOM 2中，如果闪避加暴击几率大于命中几率，暴击几率会被移除，优先考虑闪避）。
          </dd>
          <dd>
-          Soldiers can graze even if the target has no dodge (In base XCOM 2, grazes were only possible if the target had dodge stat)
+          即使目标没有闪避，士兵仍可造成擦伤（在原版XCOM 2中，只有当目标有闪避属性时，才可能出现擦伤）。
          </dd>
          <dd>
-          These changes apply completely symmetrically to both sides
+          这些更改对敌我双方都生效。
          </dd>
         </dl>
        </dd>
        <dd>
-        All units will now graze if their to-hit roll is “close” to the required to hit
+        所有单位现在都会出现擦伤，如果他们的命中投掷结果“接近”所需的命中值
         <dl>
          <dd>
-          This is referred to as the “Graze Band.” The measure of “close” is configurable in-game, and defaults to +/- 10%.
+          这被称为“擦伤带”。“接近”的范围可以在游戏中配置，默认值为 +/- 10%。
          </dd>
          <dd>
-          Example 1 : Base 70% chance to hit results in 60% chance of a normal damage hit and 20% chance of a graze. The displayed to hit is 70%.
+          示例 1 : 基础70%的命中几率，导致60%的正常伤害命中和20%的擦伤。显示的命中率为70%。
          </dd>
          <dd>
-          Example 2 : Base 20% chance to hit results in 10% chance of a normal damage hit and a 20% chance of a graze. The displayed to hit is 20%.
+          示例 2 : 基础20%的命中几率，导致10%的正常伤害命中和20%的擦伤。显示的命中率为20%。
          </dd>
         </dl>
        </dd>
        <dd>
-        Critical Hit Chance is now a chance to “promote” the damage type. A successful critical roll will:
+        暴击几率现在是指“提升”伤害类型的几率。成功的暴击掷骰会：
         <dl>
          <dd>
-          Promote a graze hit to a regular damage hit
+          将擦伤提升为正常伤害。
          </dd>
          <dd>
-          Promote a regular damage hit to a critical damage hit
+          将正常伤害提升为暴击伤害。
          </dd>
         </dl>
        </dd>
        <dd>
-        Dodge Stat is now a chance to “demote” the damage type. A successful dodge roll will:
+        闪避属性现在是指“降级”伤害类型的几率。成功的闪避掷骰会：
         <dl>
          <dd>
-          Demote critical damage hit to regular damage hit
+          将暴击伤害降级为正常伤害。
          </dd>
          <dd>
-          Demote a regular damage hit to a graze
+          将正常伤害降级为擦伤。
          </dd>
          <dd>
-          Demote a graze into a miss (configurable)
+          将擦伤降级为未命中（可配置）。
          </dd>
         </dl>
        </dd>
        <dd>
-        Good Angle Bonus Removed
+        移除绝佳角度加成
         <dl>
          <dd>
-          The good angle bonus of XCom 2 vanilla is removed, this bonus used to give you aim bonuses as you got closer to a flanking angle. There are no bonuses to aim and crit until you are fully flanking a target now.
+          原版XCOM 2中的绝佳角度加成被移除，这个加成曾经在你接近侧翼角度时给予命中加成。现在，只有完全侧翼敌人时才会有命中和暴击加成。
          </dd>
         </dl>
        </dd>
        <dd>
-        Consequences:
+        后果：
         <dl>
          <dd>
-          Low % shots are generally more likely to do something, but that something results in less damage, and is very unlikely to deal critical damage
+          低命中几率的攻击通常更有可能造成一些效果，但这些效果会造成较少的伤害，并且很难造成暴击伤害。
          </dd>
          <dd>
-          90% to-hit and above won’t entirely miss enemies (unless they have dodge)
+          90%及以上的命中几率不会完全未命中敌人（除非敌人有闪避）。
          </dd>
          <dd>
-          Dodge and Crit counter each other, so a high critical chance helps counter high dodge units, while a good dodge helps protect against critical hits
+          闪避和暴击相互抵消，因此高暴击几率有助于对抗高闪避单位，而良好的闪避则有助于防止暴击伤害。
          </dd>
          <dd>
-          When using Not Created Equally, soldiers may have negative dodge, increasing the chance hits against them will be promoted
+          使用NCE(Not Created Equally)时，士兵可能会有负闪避，这会增加命中其时被提升为暴击的几率。
          </dd>
         </dl>
        </dd>
        <dd>
-        Example 1: 90% to hit, 50% to crit
+        示例 1: 90%命中，50%暴击
         <dl>
          <dd>
-          In base XCOM 2, this will result in Critical damage 50%, Normal damage 40% of the time, Miss 10% of the time.
+          在原版XCOM 2中，这将有50%概率造成暴击伤害，40%概率造成正常伤害，10%概率未命中。
          </dd>
          <dd>
-          In Long War 2, this will result in Critical damage 40% of the time, Normal damage 50% of the time, Graze damage 10% of the time.
+          在Long War 2中，这将有40%概率造成暴击伤害，50%概率造成正常伤害，10%概率造成擦伤伤害。
           <dl>
            <dd>
-            Pre-critical results are 80% hit, 20% graze. Critical chance promotes half of the normal hits (40% of total) to critical, and half of the grazing hits (10% of total) to normal hits.
+            暴击前的结果是80%命中，20%擦伤。暴击几率将一半的正常命中（总计40%）提升为暴击，一半的擦伤命中（总计10%）提升为正常命中。
            </dd>
           </dl>
          </dd>
         </dl>
        </dd>
        <dd>
-        Example 2: 20% to hit, 10% to crit
+        示例 2: 20%命中，10%暴击
         <dl>
          <dd>
-          In base XCOM 2, this will result in Critical damage 10% of the time, Normal damage 10% of the time, Miss 80% of the time
+          在原版XCOM2 中，这将有10%概率造成暴击伤害，10%概率造成正常伤害，80%概率未命中。
          </dd>
          <dd>
-          In Long War 2, it will result in Critical damage 1% of the time, Normal damage 11% of the time, Graze damage 18% of the time, Miss 70% of the time
+          在Long War 2中，这将有1%概率造成暴击伤害，11%概率造成正常伤害，18%概率造成擦伤伤害，70%概率未命中。
           <dl>
            <dd>
-            Pre-critical results are 10% hit, 20% graze. Critical chance promotes one tenth of hits so 1% normal hits become critical, 2% grazing hits become normal.
+            暴击前的结果是10%命中，20%擦伤。暴击几率将十分之一的命中（即1%的正常命中）提升为暴击，二十分之一的擦伤命中（即2%的擦伤）提升为正常命中。
            </dd>
           </dl>
          </dd>
@@ -369,21 +369,21 @@
       </dl>
       <h2>
        <span class="mw-headline" id="Movement">
-        Movement
+        移动
        </span>
       </h2>
       <p>
-       How far can my operatives move with their mobility?
+       士兵的移动力能让他们移动多少格？
       </p>
       <dl>
        <dd>
-        After all modifiers of equipment, the number of tiles in a linear direction a soldier can move become:
+        在所有装备修正后，士兵沿直线方向每回合可以移动的格数为：
        </dd>
        <dd>
         <b>
-         Mobility: (
+         移动力: (
          <i>
-          blue move/yellow move
+          蓝移动格数/黄移动格数
          </i>
          )
         </b>
@@ -434,45 +434,45 @@
        </li>
       </ul>
       <p>
-       So if blue movements are most important, the movement numbers to aim for are: 12,14,15,17,18,20,21 and 23
+       因此如果你最关注蓝移（一个行动点的移动），那么值得优先考虑的移动力数值是：12、14、15、17、18、20、21 和 23。
       </p>
       <h2>
        <span class="mw-headline" id="Enemy_Patrol_Behavior">
-        Enemy Patrol Behavior
+        敌方巡逻行为
        </span>
       </h2>
       <p>
-       To truly understand how patrols in LW2 are different, it's important to understand how they were in vanilla.
+       要真正理解LW2中巡逻行为的不同之处，首先需要了解原版中的机制：
       </p>
       <dl>
        <dd>
-        In vanilla, there would always be one pod that would be stationed between XCOM and the objective. If that pod was killed, another pod would move to come between XCOM and the objective. Even if the pods were not active, they would, in a way, know where XCOM was. In similar fashion, pod patrol routes would dynamically adjust based on the location of XCOM.
+        在原版中，总会有一个敌方小队驻扎在XCOM与任务目标之间。如果该小队被消灭，另一个小队会移动到XCOM与目标之间。即便这些小队尚未被激活，它们在某种程度上也“知道”XCOM的位置。敌方小队的巡逻路线会根据XCOM的位置动态调整。
        </dd>
       </dl>
       <dl>
        <dd>
-        These mechanics have been done away with, and the patrol zones use a fixed line-of-play based on the objective position and XCOM's original spawn point; there are no longer updates based on current XCOM position
+        而在LW2中，这些机制已被移除。敌方巡逻区域使用一条基于任务目标位置与XCOM最初出生点之间的固定“行动线”（line-of-play）来设定；敌人的巡逻路线不再根据当前XCOM的位置进行更新
         <a class="external text" href="https://www.reddit.com/r/Xcom/comments/5qad3f/used_stealth_to_move_a_10man_squad_across_a_heavy/" rel="nofollow" target="_blank">
-         (source).
-        </a>
+         (来源)
+        </a>。
        </dd>
       </dl>
       <h2>
        <span class="mw-headline" id="Enemy_Alert_Levels">
-        Enemy Alert Levels
+        敌方警戒等级
        </span>
       </h2>
       <p>
-       In Long War 2, enemy vigilance is more complex than in vanilla.
+       在Long War 2中，敌方的警觉机制比原版更加复杂。
       </p>
       <dl>
        <dd>
         <b>
-         Green Alert Mode
+         绿色警戒模式
         </b>
         <dl>
          <dd>
-          Green alert level is most commonly the beginning of a mission when a squad is still in concealment. Advent has no idea that XCOM has infiltrated and as such, is on low alert. A pod activated on the alien turn in this state may take defensive actions (each unit has a percentage chance that scales with difficulty) such as hunkering or overwatch on activation, but will not make any offensive moves. In other words, they will not get a chance to take a free shot at XCOM.
+          绿色警戒通常出现在任务开始时，此时XCOM小队仍处于隐蔽状态。此时变种人尚未察觉XCOM的渗透，因此处于低警戒状态。在该状态下，如果敌方小队在其回合被激活，他们可能会采取防御性动作（如蹲伏或监视），每个单位是否执行防御动作取决于难度等级对应的百分比几率。但他们不会进行任何攻击性动作——换句话说，他们不会在激活时对XCOM白送一发攻击。
          </dd>
         </dl>
        </dd>
@@ -480,15 +480,15 @@
       <dl>
        <dd>
         <b>
-         Yellow Alert Mode
+         黄色警戒模式
         </b>
         <dl>
          <dd>
-          An enemy pod at Yellow alert level is not activated yet. However, it is aware of XCOM activity in the area due to sound from rocket/grenade explosions, gun shots, yelling civilians, or by finding the corpses of dead allies. Pods at this alert level will move toward any suspicious sounds they hear. If a pod is activated on an enemy turn, they may take opportunistic shots at XCOM or perform other such actions as they scamper for cover. Patrols in yellow alert run instead of walk, and may take certain actions (such as Sectoid's
+          处于黄色警戒状态的敌方小队尚未被激活，但他们已经察觉到周围有XCOM的活动迹象，例如听到火箭/榴弹的爆炸声、枪声、平民尖叫，或者发现友军尸体。在该状态下，敌方小队会朝着任何可疑声源靠近。如果在敌方回合被激活，他们可能会抢先攻击XCOM或者在寻找掩体时采取其他机会性动作。此状态下的巡逻会奔跑而非行走，某些敌人甚至在未被激活时也可能使用特殊能力（如灰人的
           <a href="../pages/Perk_List_(LWOTC).html#Psi_Reanimation" title="Perk List (LWOTC)">
-           Psi Reanimation
+           「灵能复生」
           </a>
-          ) even when not activated. You can use sound to create a diversion and draw pods away if you are attempting to stealth a mission or draw pods into your overwatch traps.
+          ）。如果你打算潜行完成任务或设下火力伏击陷阱，你可以利用声音制造干扰来吸引敌方小队。
          </dd>
         </dl>
        </dd>
@@ -497,11 +497,11 @@
        <dd>
         <dl>
          <dd>
-          See the
+          详见
           <a href="../pages/Sounds_(LWOTC).html" title="Sounds (LWOTC)">
-           Sounds
+           声音
           </a>
-          subpage for details.
+          子页面获取更多细节。
          </dd>
         </dl>
        </dd>
@@ -509,42 +509,42 @@
       <dl>
        <dd>
         <b>
-         Red Alert Mode
+         红色警戒模式
         </b>
         <dl>
          <dd>
-          This is an activated pod.
+          这是敌方小队被完全激活的状态。
          </dd>
         </dl>
        </dd>
       </dl>
       <h2>
        <span class="mw-headline" id="Skyranger_Evac_Delay">
-        Skyranger Evac Delay
+        天际游侠号撤离延迟
        </span>
       </h2>
       <p>
-       After calling for Evac, the Skyranger will not arrive immediately. Instead, the soldier will throw an Evac flare at the selected zone, and it will take a number of turns before the Evac zone is fully active:
+       在呼叫撤离之后，天际游侠号并不会立刻抵达。士兵会向选定区域投掷撤离信号弹，然后需要经过若干回合后撤离区才会完全激活，可供撤离使用。
       </p>
       <ul>
        <li>
-        Each difficulty has a base Evac Delay turns associated:
+        撤离所需的基础回合数取决于任务难度等级：
        </li>
       </ul>
       <table class="wikitable" style="text-align: center">
        <tbody>
         <tr>
          <th>
-          Rookie
+          新兵
          </th>
          <th>
-          Veteran
+          老兵
          </th>
          <th>
-          Commander
+          指挥官
          </th>
          <th>
-          Legend
+          传奇
          </th>
         </tr>
         <tr>
@@ -565,7 +565,7 @@
       </table>
       <ul>
        <li>
-        Having a large amount of soldiers in the squad will increase Evac Delay turns:
+        小队人数越多，撤离所需等待的回合数就会增加：
        </li>
       </ul>
       <table class="wikitable" style="text-align: center">
@@ -573,7 +573,7 @@
         <tr>
          <td>
           <b>
-           Squad Size
+           小队规模
           </b>
          </td>
          <td>
@@ -598,7 +598,7 @@
         <tr>
          <td>
           <b>
-           Evac Delay Turns
+           撤离延迟回合
           </b>
          </td>
          <td>
@@ -624,7 +624,7 @@
       </table>
       <ul>
        <li>
-        The infiltration value of the squad at the moment of starting the mission will either increase or decrease Evac Delay turns:
+        在任务开始时，小队的渗透值会直接影响天际游侠号撤离的延迟回合数。渗透值越高，敌方警觉性越低，撤离响应也就越快。
        </li>
       </ul>
       <table class="wikitable" style="text-align: center">
@@ -632,7 +632,7 @@
         <tr>
          <td>
           <b>
-           Infiltration Value
+           渗透值
           </b>
          </td>
          <td>
@@ -657,7 +657,7 @@
         <tr>
          <td>
           <b>
-           Evac Delay Turns
+           撤离延迟回合
           </b>
          </td>
          <td>
@@ -683,44 +683,50 @@
       </table>
       <ul>
        <li>
-        If there are 7 or more missions being infiltrated (including the one being launched) the Evac Delay will increase by 1 turn.
+        如果正在渗透的任务总数（包括当前执行的任务）达到7个或以上，撤离延迟将增加1回合。
        </li>
        <li>
-        If the commanding
-        <a href="https://www.ufopaedia.org/index.php?title=Officers_(LW2)" target="_blank" title="Officers (LW2)">
-         officer
+        如果小队的
+        <a href="../pages/Officers_(LWOTC).html" title="Officers (LWOTC)">
+         指挥官
         </a>
-        of the squad has
-        <a href="https://www.ufopaedia.org/index.php?title=Perk_List_(LW2)#Air_Controller" title="Perk List (LW2)">
-         Air Controller
+        拥有
+        <a href="../pages/Perk_List_(LWOTC).html#Air_Controller" title="Perk List (LWOTC)">
+         「掌空者」
         </a>
-        the Evac Delay will decrease by 2 turns.
+        战术能力，撤离延迟将减少2回合。
        </li>
        <li>
-        Redeploying the Evac flare after having already called for Evac will increase the Evac Delay by 2 turns.
+        在已经呼叫撤离之后重新部署撤离信号弹，将会使撤离延迟增加2回合。
        </li>
        <li>
-        Evac Delay cannot be lower than 1 turn or higher than 10 turns.
+        撤离延迟的回合数不会少于1回合，也不会超过10回合。
        </li>
       </ul>
       <h2>
        <span class="mw-headline" id="Status_Effects">
-        Status Effects
+        状态效果
        </span>
       </h2>
       <h3>
        <span class="mw-headline" id="Mental_Ailments">
-        Mental Ailments
+        精神异常
        </span>
       </h3>
       <dl>
        <dd>
         <b>
-         Disoriented
+         混乱
         </b>
         <dl>
          <dd>
-          Disoriented units have -20 Aim, -6 mobility, and -20 will defense, and cannot use most abilities. Disoriented units may still move, shoot, and overwatch. These effects last until the end of the next friendly turn. Disorient will break overwatch and suppression when applied to a unit currently doing those actions. If Sectoids and Gatekeepers are hit they will lose any mind controls and their Psi Zombies will be destroyed. Disorient on a mind-controlled unit will not free them.
+          混乱状态的单位会受到-20命中率，-6移动力，-20意志力的负面影响，且无法使用大多数能力。混乱状态的单位仍然可以移动、射击或进行监视。该效果持续到下一个友方回合结束。
+         </dd>
+         <dd>
+          混乱状态会打断当前正在执行监视或压制行动的单位。如果受到混乱影响，灰人和看门人将失去所有心灵控制，并且他们的灵能僵尸将被摧毁。
+         </dd>
+         <dd>
+          对被心灵控制的单位施加混乱状态不会解放他们。
          </dd>
         </dl>
        </dd>
@@ -728,11 +734,11 @@
       <dl>
        <dd>
         <b>
-         Stunned
+         眩晕
         </b>
         <dl>
          <dd>
-          Stunned units lose (stun count) actions (Stun 2 = -2 actions/1 turn). Stunning a Sectoid or Gatekeeper will release any mind controls they have active, destroying their Psi Zombies.
+          眩晕状态的单位失去（眩晕计数）次行动点数（眩晕 2 = -2 次行动点数/1 回合）。眩晕一个灰人或看门人会解除它们的所有心灵控制，摧毁它们的灵能僵尸。
          </dd>
         </dl>
        </dd>
@@ -740,11 +746,11 @@
       <dl>
        <dd>
         <b>
-         Panick
+         恐慌
         </b>
         <dl>
          <dd>
-          Panicked units lose their turn and may hunker if possible. This cannot be re-applied to extend the duration. Units do not lose or have their reaction attacks cancelled but can react against allies and have a -35 aim penalty. Certain "battle madness" effects can trigger from special events such as a bondmate dying or a fear triggering. Shattered is the same as basic panic where the unit will simply hunker. Berserk makes the soldier go into a frenzy and perform random offensive actions. Obsessed only triggers from fears of an enemy and forces the soldier to approach them and unload their weapon against them.
+          恐慌的单位失去他们的回合，并且如果可能的话，会执行「蹲伏」。这种状态不能重新施加以延长持续时间。单位不会失去反应攻击或取消反应攻击，但可以对盟友进行反应，并且会有-35的命中惩罚。某些“战斗疯狂”效果可能由特殊事件触发，例如战友死亡或恐惧触发。“精神崩溃”与基本的恐慌状态相同，单位会简单地执行「蹲伏」。“狂暴化”使士兵进入狂乱状态，并执行随机的进攻行为。“被挑衅”仅由对敌人的恐惧触发，迫使士兵接近敌人并对其开火。
          </dd>
         </dl>
        </dd>
@@ -752,11 +758,11 @@
       <dl>
        <dd>
         <b>
-         Unconscious
+         失去意识
         </b>
         <dl>
          <dd>
-          The unit is knocked out for the rest of the mission, can be revived with skills that heal mental ailments or get up (xcom).
+          该单位在任务剩余时间内处于昏迷状态，可以通过治疗负面精神状态的技能或「站起来」技能使其恢复。
          </dd>
         </dl>
        </dd>
@@ -764,28 +770,28 @@
       <dl>
        <dd>
         <b>
-         Mind Control
+         心灵控制
         </b>
         <dl>
          <dd>
-          The unit is being psionically controlled by another unit, forcing them to join the enemy and attack their allies. The effect lasts 3-turns.
+          该单位正被另一单位通过心灵控制，迫使其加入敌方并攻击其盟友。该效果持续3回合。
          </dd>
         </dl>
        </dd>
       </dl>
       <h3>
        <span class="mw-headline" id="Environmental_Effects">
-        Environmental Effects
+        环境效果
        </span>
       </h3>
       <dl>
        <dd>
         <b>
-         Burning
+         燃烧
         </b>
         <dl>
          <dd>
-          Burn deals 1-3 damage per turn, lasts two turns, and lockout of most abilities. They can not perform ranged attacks or use most special abilities, but can still do directly adjacent melee attacks (for example stun lance would not be available as it is a dashing melee attack regardless if they are directly adjacent or not). This can be cured by running through water tiles. Hunker down does not remove this.
+          燃烧每回合造成1-3点伤害，持续两回合，并禁用大部分能力。处于燃烧状态的单位不能进行远程攻击或使用大多数特殊能力，但仍可以进行直接相邻的近战攻击（例如，「眩晕长枪」将不可用，因为它是一次冲刺的近战攻击，无论是否直接相邻）。这可以通过穿越水域格子来解除。「蹲伏」不会移除此效果。
          </dd>
         </dl>
        </dd>
@@ -793,11 +799,11 @@
       <dl>
        <dd>
         <b>
-         Poisoned
+         中毒
         </b>
         <dl>
          <dd>
-          Poisoned units have a -20 Aim, -4 mobility, and takes 1 damage at the start of their turn. The effect will last for 2 turns.
+          中毒的单位会遭受-20命中、-4移动力的负面影响，并在回合开始时受到1点伤害。该效果持续2回合。
          </dd>
         </dl>
        </dd>
@@ -805,11 +811,11 @@
       <dl>
        <dd>
         <b>
-         Acid Burn
+         酸蚀
         </b>
         <dl>
          <dd>
-          Deals 1-3 damage per turn. Lasts 1 turn.
+          每回合受到1-3点伤害。持续1回合。
          </dd>
         </dl>
        </dd>
@@ -817,28 +823,28 @@
       <dl>
        <dd>
         <b>
-         Frozen
+         冰冻
         </b>
         <dl>
          <dd>
-          Frozen units lose their turn and also lose 10 defense. Certain units are only partially affected and will defrost at the beginning of their turn but loses one of their action points. A frozen unit cannot be stunned.
+          冰冻的单位失去其回合并且防御减少10。某些单位仅部分受到影响，且会在其回合开始时解冻，但失去一个行动点。冰冻的单位不能被眩晕。
          </dd>
         </dl>
        </dd>
       </dl>
       <h3>
        <span class="mw-headline" id="Other">
-        Other
+        其他
        </span>
       </h3>
       <dl>
        <dd>
         <b>
-         Chryssalid Poison
+         寄生兽毒液
         </b>
         <dl>
          <dd>
-          Deals damage based on the level of the inflictor (Hive queen's poison will deal more than a basic chryssalid) and will persist for the rest of the mission until healed. If the unit dies while afflicted, a cocoon will spawn that creates smaller chryssalids. Medkit's poison immunity does not prevent this from applying but does prevent from being damaged by it.
+          所造成的伤害取决于施加者的等级（寄生兽虫后的毒液伤害将高于普通寄生兽），并将在整场任务中持续，直到被治愈。如果单位在此中毒状态下死亡，将生成一个茧，孵化出较小的寄生兽。医疗包的毒素免疫不能阻止该效果的施加，但能防止受到其伤害。
          </dd>
         </dl>
        </dd>
@@ -846,15 +852,15 @@
       <dl>
        <dd>
         <b>
-         Defensive Smoke
+         防御烟雾
         </b>
         <dl>
          <dd>
-          Grants all units within the smoke +20 defense and immunity to flanking critical bonus. Lasts for 3 turns. Smoke will grant an additional 10 defense with the
+          给予烟雾范围内所有单位+20防御，并免疫侧翼暴击加成。持续3回合。如果拥有
           <a href="../pages/Perk_List_(LWOTC).html#Dense_Smoke" title="Perk List (LWOTC)">
-           Dense Smoke
+           「浓密烟雾」
           </a>
-          perk.
+          技能，烟雾额外提供10点防御。
          </dd>
         </dl>
        </dd>
@@ -862,11 +868,11 @@
       <dl>
        <dd>
         <b>
-         Maim
+         致残
         </b>
         <dl>
          <dd>
-          The affilicted unit has 0 mobility and lasts for the turn.
+          受影响的单位移动力为0，持续一个回合。
          </dd>
         </dl>
        </dd>
@@ -874,11 +880,11 @@
       <dl>
        <dd>
         <b>
-         Bleeding
+         流血
         </b>
         <dl>
          <dd>
-          Bleeding units take 1 damage per turn. Lasts 2 turns.
+          流血的单位每回合受到1点伤害，持续2回合。
          </dd>
         </dl>
        </dd>
@@ -886,187 +892,181 @@
       <dl>
        <dd>
         <b>
-         Rupture
+         撕裂
         </b>
         <dl>
          <dd>
-          Ruptured units take an additional (rupture count) damage from all sources for the rest of the mission. Cannot be removed.
+          撕裂的单位在整场任务中会从所有伤害来源额外受到（撕裂层数）点伤害。无法移除。
          </dd>
         </dl>
        </dd>
       </dl>
       <h2>
        <span class="mw-headline" id="Detection_Range">
-        Detection Range
+        侦测范围
        </span>
       </h2>
       <p>
-       The radius at which enemies can detect you in concealment is called the Detection Range, and this scales based on a variety of factors. Be aware that detection tiles do not appear on obstacles that can be walked across such as benches. Large Units also tends to have slightly misleading detection and may be slightly larger than it appears.
+       敌人在你处于隐蔽状态时可以侦测到你的半径称为“侦测范围”，该范围会受到多种因素影响而变化。请注意，侦测格不会显示在可以穿越的障碍物上，比如长椅。大型单位的侦测范围也往往不太准确，可能比显示的范围稍大。
       </p>
       <p>
        <b>
-        Infiltration level
+        渗透等级
        </b>
       </p>
       <p>
-       At baseline 100% infiltration, enemies will have their normal detection range.  At infiltration rates below 100%, the enemy will have between between x1 and x1.25 of normal detection radius (i.e up to 1/4th more); conversely, at infiltration rates above 100%, the enemy will have between x1 and x0.8334 of normal detection radius (i.e. up to 1/6th less).  The effect scales linearly; for example, at 50% Infiltration, enemy detection range gets a 1/8 bonus (half the maximum bonus of 1/4).
+       在基础的100%渗透度时，敌人拥有正常的侦测范围。当渗透度低于100%时，敌人的侦测半径会在正常范围的1倍到1.25倍之间（即最多增加25%）；相反，当渗透度高于100%时，敌人的侦测半径会在正常范围的1倍到0.8334倍之间（即最多减少约16.67%）。该效果是线性变化的，例如在50%渗透时，敌人的侦测范围将增加1/8（即最大25%加成的一半）。
       </p>
       <ul>
        <li>
-        &lt;100% Infiltration: Base * [1 + ((100% - Infil%) x 1/4)]
+        渗透 &lt;100%：基础 * [1 + ((100% - 当前渗透%) × 1/4)]
        </li>
        <li>
-        &gt;100% Infiltration: Base * [1 - ((Infil% - 100%) x 1/6)]
+        渗透 &gt;100%：基础 * [1 - ((当前渗透% - 100%) × 1/6)]
        </li>
       </ul>
       <p>
        <b>
-        Alert Level
+        警戒等级
        </b>
       </p>
       <p>
-       In LWOTC, enemies on alert gain a bonus to detection as they become more aware of XCOM activities within the area.
+       在LWOTC中，敌人进入警戒状态后会因为对XCOM活动的警觉性提高而获得额外侦测加成。
       </p>
       <p>
-       Yellow Alert grants an additional +2 tiles of detection.
+       黄色警戒额外+2格侦测范围
       </p>
       <p>
-       Red Alert grants an additional +4 tiles of detection.
+       红色警戒额外+4格侦测范围
       </p>
       <h2>
        <span class="mw-headline" id="Fatigue">
-        Fatigue
+        疲劳
        </span>
       </h2>
       <ul>
        <li>
-        Soldiers now grow fatigued when continuously participating in missions. A point of will is lost every three turns or every two turns when sent out while tired. They enter a tired state when their will reaches about 67% of their max will and require 7-12 days to recover. A soldier will be shaken after participating in a mission while tired and their will reaches about 33% or below and must recover for 20-24 days.
+        士兵在连续参加任务时会逐渐感到疲劳。每过三回合会损失1点意志力，如果在疲劳状态下出任务，则每两回合损失1点。当意志力下降到最大值的大约67%时，士兵会进入“疲劳”状态，需要7到12天恢复。如果士兵在“疲劳”状态下参加任务，并且意志力降至约33%或更低，他们将变为“动摇”状态，需要20到24天恢复。
        </li>
        <li>
-        Soldiers will only recover will when they are idle and not doing any actions such as infiltrating.
+        士兵只有在“空闲”状态下才会恢复意志力，比如没有执行渗透等任务时。
        </li>
        <li>
-        Killing a civilian will decrease your will by 2.
+        击杀一名平民会使士兵失去2点意志力。
        </li>
        <li>
-        Will loss from miscellaneous actions such as seeing enemies or taking damage has been removed.
+        因看见敌人或受到伤害而导致的意志力损失已被移除。
        </li>
        <li>
-        Most random panic events have been removed and/or been restricted to shattered (classic panic state where unit hunkers).
+        大多数随机恐慌事件已被删除，或仅限于“精神崩溃”（即经典恐慌状态，单位执行「蹲伏」）。
        </li>
       </ul>
       <h2>
        <span id="Explosive/AoE_Damage_Falloff">
        </span>
        <span class="mw-headline" id="Explosive.2FAoE_Damage_Falloff">
-        Explosive/AoE Damage Falloff
+        爆炸/范围伤害衰减
        </span>
       </h2>
       <p>
-       Long War makes explosives and some AoE attacks have damage falloff, decreasing the damage dealt against targets based on the distance from impact. Falloff can be removed with
+       Long War中对爆炸物和某些范围攻击引入了伤害衰减机制，目标距离爆炸中心越远，所受到的伤害越低。若拥有技能
        <a href="../pages/Perk_List_(LWOTC).html#Tandem_Warheads" title="Perk List (LWOTC)">
-        Tandem Warheads
+        「串联弹头」
        </a>
-       .
+       ，则可移除此衰减效果。
       </p>
       <p>
-       There are three tiers of potential damage falloff depending on distance from detonation point:
-None (up to half blast radius distance)
-25% (up to 75% of blast radius distance)
-50% (outermost 25%)
+       根据距离爆炸点的远近，伤害衰减分为三个等级：无衰减——爆炸半径的一半以内；25%衰减——爆炸半径的50%至75%之间；50%衰减——最外圈25%范围内
       </p>
       <p>
-       Initially rolled damage gets reduced by a random amount (starting at 0%) up to this potential damage falloff.
+       最初掷出的伤害会随机减少（从0%起始），上限为该距离段的最大衰减值。
       </p>
       <p>
-       Resulting damage gets rounded down but cannot go lower than 1.
+       最终伤害向下取整，但不会低于1点。
       </p>
       <h2>
        <span class="mw-headline" id="Environmental_Damage">
-        Environmental Damage
+        环境伤害
        </span>
       </h2>
       <p>
-       There are 3 kinds of destructible objects which all have some "toughness", or can be seen as "environmental health", that determines how much damage needs to be dealt before they are destroyed.
+       可破坏的物体分为三种类型，每种都有一定的“坚固度”，可理解为“环境生命值”，决定了需要造成多少环境伤害才能将其摧毁：
       </p>
       <ul>
        <li>
-        Simple destructibles: have a single toughness value where enough damage instantly destroys the object. ex. tables or wooden fences
+        简单可破坏物体：具有一个固定的坚固度值，一旦造成足够的环境伤害即可直接摧毁。例如：桌子、木栅栏。
        </li>
        <li>
-        Fractional destructibles: similar to simple destructibles but have multiple parts/stages which can be destroyed partially or completely based on the damage dealt. ex. walls or floors
+        分段可破坏物体：类似于简单可破坏物体，但拥有多个部分/阶段，可以被部分或完全摧毁，具体取决于造成的环境伤害。例如：墙壁、地板。
        </li>
        <li>
-        Annihilation destructibles: these objects have two stages, damaged and annihilated. These objects have two toughness values. An example are cars where if enough damage is dealt they become damaged and continue to take damage over time until enough is dealt and becomes annihilated.
+        湮灭型可破坏物体：这些物体有两个状态：受损和湮灭，分别对应两个坚固度值。例如：汽车，初始伤害使其进入“受损”状态，随后持续受到伤害，最终达到湮灭状态。
        </li>
       </ul>
       <p>
-       Despite objects having a "toughness" value, this is not an actual health value but a threshold. An object cannot be eventually destroyed by doing so through multiple hits. Either enough environmental damage is dealt to change the object states or nothing occurs. One exception are targetable objects such as gas tanks or objectives.
+       尽管这些物体具有“坚固度”数值，但这不是传统意义上的生命值，而是一个门槛值：物体不会因为多次小额攻击逐渐被摧毁——要么一次性达到门槛改变其状态，要么完全无效。唯一的例外是可被瞄准的目标物体，例如燃气罐或任务目标。
       </p>
       <p>
-       Long War greatly changes the impact explosives and weapons have against the environment in the battlefield. Frag grenades have significantly lower environmental damage and very rarely destroys cover (this can be boosted with
+       Long War大幅调整了爆炸物与武器对战场环境的影响。榴弹的环境伤害显著降低，很少摧毁掩体（可通过技能
        <a href="../pages/Perk_List_(LWOTC).html#Sapper" title="Perk List (LWOTC)">
-        Sapper
+        「工兵」
        </a>
-       and
+       或
        <a href="../pages/Perk_List_(LWOTC).html#Combat_Engineer" title="Perk List (LWOTC)">
-        Combat Engineer
-       </a>
-       ). Enemy explosives however are slightly better than XCOM's and are more likely to destroy cover, be cautious of them. This makes cover more important on both sides and requires more careful consideration in 
-positioning.
+        「战斗工程师」
+       </a>提升效果
+       ）。敌方的爆炸物稍强于XCOM，更有可能摧毁掩体，请小心应对。这使得战斗中掩体的重要性大幅提升，对站位要求更高。
       </p>
       <p>
-       In addition to this, just like with explosive damage, environmental damage also
-suffers damage falloff from the point of impact when using explosives making it more difficult to level out cover completely (this can be removed by using
+       此外，环境伤害同样受到爆炸伤害衰减的影响：距离爆炸点越远，造成的环境破坏越低，使得完全摧毁一片掩体更加困难(可通过
        <a href="../pages/Perk_List_(LWOTC).html#Combat_Engineer" title="Perk List (LWOTC)">
-        Combat Engineer
-       </a>
-       ).
+        「战斗工程师」
+       </a>技能移除衰减
+       )。
       </p>
       <p>
-       Similar to how damage is dealt, there is also variance with 
-the environmental damage dealt ranging from +/- 20% spread.
+       和普通伤害一样，环境伤害也存在±20%的浮动范围。
       </p>
       <h2>
        <span class="mw-headline" id="Cover_Defense">
-        Cover Defense
+        掩体防御
        </span>
       </h2>
       <p>
-       In long war, cover defense is worth more and thus generally have more of an effect and important to use to stay safe. Low cover now grants 30 defense and high cover now grants 45 defense.
+       在Long War中，掩体防御更加重要，因此通常具有更大的影响力，合理利用掩体是确保安全的重要手段。半掩体现在提供30点防御，全掩体则提供45点防御。
       </p>
       <h2>
        <span class="mw-headline" id="Hacking">
-        Hacking
+        侵入
        </span>
       </h2>
       <p>
-       Hacking is an ability that can be used for objectives or by the
+       侵入是一种可以用于完成任务目标的能力，
        <a href="../pages/Specialist_(LWOTC).html" title="Specialist (LWOTC)">
-        Specialist
+        专家
        </a>
-       class with their gremlin which can also be used on Advent Poles or against robotic enemies with
+       的小精灵也能利用它入侵变种人路灯或对机器敌人使用
        <a href="../pages/Perk_List_(LWOTC).html#Haywire_Protocol" title="Perk List (LWOTC)">
-        Haywire Protocol
+        「失控协议」
        </a>
-       . The hacking chance is based on the attacker's hacking score, the defender's hack defense, some amount of variance and various modifiers depending on what is being hacked and what the attempted result is. There are a few notes to keep in mind about hacking.
+       。侵入的成功几率取决于攻击者的侵入值、目标的侵入防御值、一定的随机性，以及根据侵入对象和尝试结果不同而变化的各种修正。以下是一些关于侵入的注意事项：
       </p>
       <ul>
        <li>
-        A robotic enemy can only be hacked once per mission and cannot be re-attempted. This means that you can't continuously mind control a robotic enemy after it wears out or retry if you failed an attempt.
+        每个机器敌人每场任务只能被侵入一次，无法重复尝试。这意味着你不能在控制效果结束后再次尝试侵入控制，也不能在失败后重试。
        </li>
        <li>
         <a href="../pages/Perk_List_(LWOTC).html#Haywire_Protocol" title="Perk List (LWOTC)">
-         Haywire Protocol
+         「失控协议」
         </a>
-        and
+        和
         <a href="../pages/Perk_List_(LWOTC).html#Full_Override" title="Perk List (LWOTC)">
-         Full Override
+         「完全破解」
         </a>
-        can target enemies within reasonable line of sight whether they are within their own vision or an alliles from squadsight. These abilities are not the same as hacking objectives or Advent Poles which requries the Specialists' own line of sight in order to begin hacking.
+        可以在合理视距范围内对敌人发动，不管敌人是在士兵自己的视野内，还是通过队友的小队视野看到的。
        </li>
        <li>
-        When hacking a jail cell during Jailbreaks, the doors are opened upon success and granting control of all the rookies/rebels within to begin escaping. This is not the case for VIP missions which require opening the door manually with a soldier and having the VIP within line of sight in order to take control of them and begin escaping.
+        在“越狱”任务中，如果侵入牢门成功，牢门会开启，囚禁其中的新兵/反抗军会立刻归你控制并开始逃跑。然而在营救VIP任务中，这种机制并不适用——你必须手动由士兵打开牢门，且VIP必须在视野范围内才能获得其控制权并开始逃跑。
        </li>
       </ul>
       <p>
@@ -1076,50 +1076,48 @@ the environmental damage dealt ranging from +/- 20% spread.
        <span id="Overwatch/Reaction_Rules">
        </span>
        <span class="mw-headline" id="Overwatch.2FReaction_Rules">
-        Overwatch/Reaction Rules
+        监视/反应规则
        </span>
       </h2>
       <p>
-       All units with a gun can enter "overwatch" allowing them to take a reactive shot against an enemy that moves at least two tiles within vision. All reaction attacks will suffer a 30% aim penalty meaning that an attack will have its final aim result multiplied by 0.7 to calculate the final hit chance. For example, if the attack would have an 80% chance to hit, the final result for a reactive attack would be 56%. For targets that are dashing, the penalty is increased to 40%.
+       所有携带枪械的单位都可以进入“监视”状态，使其能对在其视野内移动至少两格的敌人进行一次反应射击。所有反应攻击会受到30%的命中惩罚，即最终命中率会乘以0.7。例如，若原本有80%命中率，那么反应射击的最终命中率将为56%。如果目标执行的是“冲刺”（即使用全部行动点移动），则惩罚提高至40%。
       </p>
       <p>
-       There are optional changes that only apply if the
+       如果未启用
        <b>
         Revert Overwatch Rules Change
        </b>
-       mod is
-       <b>
-        disabled
-       </b>
-       (note this is a leftover mechanic that was made during the beta of LWOTC but is no longer usedm use at own risk):
+       模组（这是LWOTC测试阶段遗留的机制，现在已默认弃用，请自行斟酌），则还有以下可选改动：
       </p>
       <ul>
        <li>
-        Overwatch now triggers as soon as the unit moves, which makes it no longer possible to perform 1-tile moves to avoid overwatch. The implementation right now is not perfect and this change may not always function correctly, depending on factors like line of sight, although typically overwatch should now more consistently trigger as targets move or step into range.
+        监视会在敌人一开始移动时立即触发，这意味着敌人不能再通过移动1格来“卡监视”规避反应射击。不过该机制实现尚不完美，是否触发仍可能受到视野等因素影响。一般来说，这让监视在目标移动或进入射程时更加容易触发。
        </li>
        <li>
-        This change makes it easier to trigger overwatch while in cover, but overwatch shots now ignore 25 cover defense.
+        此改动也让从掩体中触发监视更容易，但监视射击将无视敌人25点掩体防御加成。
        </li>
       </ul>
       <h2>
        <span class="mw-headline" id="Weapon_Modifications">
-        Weapon Modifications
+        武器插件
        </span>
       </h2>
       <p>
-       Weapon mods can be obtained through enemy loot drops similarly to the base game. All weapons have 3 available weapon slots and can be freely equipped and removed from them. The plasma rifle is unique in that it has a special property allowing it to have 4 weapon slots.
-Some weapon mods occupy the same slots and are thus mutually exclusive. Scopes and lasers sights cannot be used together as well as expanded magazines with autoloaders.
+       武器插件可以通过击败敌人后掉落的战利品获得，方式与原版游戏类似。所有武器都有3个可用的插件槽位，可以自由安装和拆卸插件。电浆步枪是个例外，它有特殊属性，可以拥有4个插件槽位。
+      </p>
+      <p>
+       部分插件会占用相同的槽位，因此互斥：瞄准镜与激光瞄准器不可同时使用，扩展弹匣与自动装填器不可同时使用。
       </p>
       <h2>
        <span class="mw-headline" id="Concealment">
-        Concealment
+        隐蔽
        </span>
       </h2>
       <p>
-       On some missions, the squad can start in concealment which enemies will not be able to detect them unless within a certain range. Concealment allows you to sneak around or set up positions for an ambush. Most offensive actions and noisy actions such as breaking through windows or ramming doors will reveal the squad and make ADVENT aware of xcom presence in the area allowing them to engage when in vision. An action will reveal the soldier or squad if there is a red eye icon in the UI when selecting the action.
+       在多数任务中，小队可以以“隐蔽”状态开始，敌人只有在接近到一定距离内才能侦测到XCOM。隐蔽状态允许玩家绕开巡逻队、设伏或接近目标。但大多数进攻行为或产生噪音的动作（例如打破窗户或撞开门）都会打破隐蔽，使变种人意识到XCOM的存在并进入战斗状态。若某个动作会打破隐蔽，在操作时UI会显示一个红色眼睛图标作为提示。
       </p>
       <p>
-       During concealment there are a few additional bonuses that can be used offensively. Any overwatch set during concealment do not suffer overwatch penalties and will fire at the full aim the shot is capable of. Additionally, all enemies will behave as if they have 0 dodge (this does not mean graze band will not apply).
+       在隐蔽期间，还有以下进攻加成：监视射击不会受到命中惩罚，将以武器的完整命中率射击；所有敌人会被视为“闪避为0”，这不会影响“擦伤带”机制，但提高了命中与爆头的概率。
       </p>
       <!-- 
 NewPP limit report
