@@ -17,7 +17,7 @@
    <div class="mw-indicators mw-body-content">
    </div>
    <h1 class="firstHeading" id="firstHeading" lang="en">
-    Missions (LWOTC)
+    任务(LWOTC)
    </h1>
    <div class="mw-body-content" id="bodyContent">
     <div id="jump-to-nav">
@@ -42,7 +42,7 @@
           <input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/>
           <div class="toctitle" dir="ltr" lang="en">
            <h2 id="mw-toc-heading">
-            Contents
+            内容目录
            </h2>
            <span class="toctogglespan">
             <label class="toctogglelabel" for="toctogglecheckbox">
@@ -56,7 +56,7 @@
               1
              </span>
              <span class="toctext">
-              Overview
+              概览
              </span>
             </a>
             <ul>
@@ -66,7 +66,7 @@
                 1.1
                </span>
                <span class="toctext">
-                Enemy Activity
+                敌方活动
                </span>
               </a>
              </li>
@@ -78,7 +78,7 @@
               2
              </span>
              <span class="toctext">
-              Mission Table
+              任务表
              </span>
             </a>
            </li>
@@ -210,115 +210,124 @@
       </div>
       <h2>
        <span class="mw-headline" id="Overview">
-        Overview
+        概览
        </span>
       </h2>
       <h3>
        <span class="mw-headline" id="Enemy_Activity">
-        Enemy Activity
+        敌方活动
        </span>
       </h3>
       <p>
-       Enemy Activity refers to the quantity of enemies deployed on a map. Enemy Activity Level is an estimation of the number of enemy units you will encounter at 100% infiltration; the
+       敌方活动指的是地图上部署的敌人数量。敌方活动等级是你在100%潜入时预计会遇到的敌方单位数量；
        <b>
-        actual
+        实际
        </b>
-       number of enemy units depends on your infiltration rate (for more information, see the
+       的敌人数量取决于你的渗透潜入率（详情请参见
        <a href="../pages/Infiltration_(LWOTC).html" title="Infiltration (LWOTC)">
-        Infiltration
+        潜入
        </a>
-       page). In general, at 0% infiltration, the number will be several steps higher than the baseline; at 200% infiltration, it will be a few steps lower. These steps are dependent on mission type and do not necessarily correspond to one Enemy Activity Level per step.
+       页面）。通常情况下，在0%潜入时，敌人数量会比基准高出几个等级；在200%潜入时，则会低几个等级。这些等级变化取决于任务类型，并不一定是每个等级对应一个敌方活动等级。
       </p>
       <h2>
        <span class="mw-headline" id="Mission_Table">
-        Mission Table
+        任务表
        </span>
       </h2>
       <p>
-       This table compiles the information contained in LW2's configuration files regarding missions. Greater detail of these activities are found in
+       此表整理了LW2配置文件中有关任务的信息。有关这些活动的更多详细信息，请参见
        <a href="../pages/ADVENT%27s_Agenda_(LWOTC).html#Activity_Tables" title="ADVENT's Agenda (LWOTC)">
-        Activity Tables
+        活动表
        </a>
-       .
+       。
       </p>
       <div style="text-align: center;">
        <table class="wikitable sortable" style="text-align: center" width="100%">
         <tbody>
          <tr>
           <th>
-           Mission
+           任务
           </th>
           <th>
-           Mission Type
+           任务类型
           </th>
           <th>
-           Mission Timer
+           任务计时器
           </th>
           <th>
-           Max Soldiers
+           最多上场士兵数量
           </th>
           <th>
-           Infiltration
+           可潜入
           </th>
           <th>
-           Evacuation
+           起始隐匿
           </th>
           <th>
-           Full Salvage
+           撤离
+          </th>
+          <th>
+           全面回收
           </th>
          </tr>
          <tr>
           <td>
-           Hack Workstation
+           入侵工作站
           </td>
           <td>
-           Guerrilla Ops
+           游击行动
           </td>
           <td>
-           8 (Objective)
+           8（任务目标）
           </td>
           <td>
            8
           </td>
           <td>
-           Yes
+           是
           </td>
           <td>
-           Evac Flare
+           是
           </td>
           <td>
-           No
+           撤离信号弹
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Recover Item
+           收集物品
           </td>
           <td>
-           Guerrilla Ops
+           游击行动
           </td>
           <td>
-           8 (Objective)
+           8（任务目标）
           </td>
           <td>
            8
           </td>
           <td>
-           Yes
+           是
           </td>
           <td>
-           Evac Flare
+           是
           </td>
           <td>
-           No
+           撤离信号弹
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Protect Device
+           保护装置
           </td>
           <td>
-           Guerrilla Ops
+           游击行动
           </td>
           <td>
            NA
@@ -327,159 +336,180 @@
            8
           </td>
           <td>
-           Alerted
+           快速反应（起始黄警）
           </td>
           <td>
-           Evac Flare
+           是
           </td>
           <td>
-           No
+           撤离信号弹
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Extract
+           护送VIP
           </td>
           <td>
-           Council
+           理事会
           </td>
           <td>
-           12 (Evac)
+           22-24（强制撤离）
           </td>
           <td>
            8
           </td>
           <td>
-           Yes (No Concealment)
+           是
           </td>
           <td>
-           Fixed Exit
+           否
           </td>
           <td>
-           No
+           固定撤离点
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Rescue
+           营救
           </td>
           <td>
-           Council
+           理事会
           </td>
           <td>
-           18-24 (Evac)
+           22-24（强制撤离）
           </td>
           <td>
            8
           </td>
           <td>
-           Yes
+           是
           </td>
           <td>
-           Fixed Exit
+           是
           </td>
           <td>
-           No
+           固定撤离点
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Compound Rescue
+           安保总部营救
           </td>
           <td>
-           Council
+           理事会
           </td>
           <td>
-           10 (Security Level)
+           10（安保等级）
           </td>
           <td>
            8
           </td>
           <td>
-           Yes
+           是
           </td>
           <td>
-           Countdown Exit
+           是
           </td>
           <td>
-           No
+           倒计时固定撤离点
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Destroy Relay
+           摧毁中继器
           </td>
           <td>
-           Guerrilla Ops
+           游击行动
           </td>
           <td>
-           12 (Objective)
+           12（任务目标）
           </td>
           <td>
            8
           </td>
           <td>
-           Yes
+           是
           </td>
           <td>
-           Evac Flare
+           是
           </td>
           <td>
-           No
+           撤离信号弹
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Sabotage Transmitter
+           破坏信号发射器
           </td>
           <td>
-           Guerrilla Ops
+           游击行动
           </td>
           <td>
-           4 (Objective)
+           4 + 被破坏的灵能中继器（任务目标）
           </td>
           <td>
            8
           </td>
           <td>
-           Yes
+           是
           </td>
           <td>
-           Evac Flare
+           是
           </td>
           <td>
-           No
+           撤离信号弹
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Smash N Grab
+           补给箱搜寻
           </td>
           <td>
-           Guerrilla Ops
+           游击行动
           </td>
           <td>
-           12 (Reinforcements)
+           12（增援）
           </td>
           <td>
            8
           </td>
           <td>
-           Yes (No Concealment)
+           是
           </td>
           <td>
-           Fixed Exit
+           否
           </td>
           <td>
-           No
+           固定撤离点
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Supply Extraction
+           空运补给拦截
           </td>
           <td>
-           Guerrilla Ops
+           游击行动
           </td>
           <td>
            NA
@@ -488,44 +518,50 @@
            8
           </td>
           <td>
-           Yes
+           是
           </td>
           <td>
-           Evac Flare
+           100%潜入
           </td>
           <td>
-           No
+           撤离信号弹
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Neutralize Target
+           消灭目标
           </td>
           <td>
-           Council
+           理事会
           </td>
           <td>
-           12 (Evac)
+           22-24（强制撤离）
           </td>
           <td>
            8
           </td>
           <td>
-           Yes
+           是
           </td>
           <td>
-           Fixed Exit
+           是
           </td>
           <td>
-           No
+           固定撤离点
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Sabotage ADVENT Monument
+           破坏变种人纪念碑
           </td>
           <td>
-           Defend
+           防御
           </td>
           <td>
            NA
@@ -534,21 +570,24 @@
            8
           </td>
           <td>
-           Yes
+           是
           </td>
           <td>
-           Evac Flare
+           是
           </td>
           <td>
-           No
+           撤离信号弹
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Sabotage Alien Facility
+           破坏变种人设施
           </td>
           <td>
-           Sabotage
+           破坏
           </td>
           <td>
            NA
@@ -557,21 +596,24 @@
            10
           </td>
           <td>
-           100%
+           是（必须达到100%）
           </td>
           <td>
-           Evac Flare
+           是
           </td>
           <td>
-           No
+           撤离信号弹
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           Troop Maneuvers
+           伏击列队
           </td>
           <td>
-           Liberation
+           解放
           </td>
           <td>
            NA
@@ -580,21 +622,24 @@
            8
           </td>
           <td>
-           Yes
+           是
           </td>
           <td>
-           Evac Flare
+           100%潜入
           </td>
           <td>
-           Yes
+           撤离信号弹
+          </td>
+          <td>
+           是
           </td>
          </tr>
          <tr>
           <td>
-           Supply Line Raid
+           突袭补给线
           </td>
           <td>
-           Supply Line Raid
+           补给突袭
           </td>
           <td>
            NA
@@ -603,320 +648,24 @@
            8
           </td>
           <td>
-           Yes
+           是
           </td>
           <td>
-           Evac Flare
+           100%潜入
           </td>
           <td>
-           Yes
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Secure UFO
+           撤离信号弹
           </td>
           <td>
-           Supply Line Raid
-          </td>
-          <td>
-           16 (Reinforcements)
-          </td>
-          <td>
-           8
-          </td>
-          <td>
-           Yes
-          </td>
-          <td>
-           Evac Flare
-          </td>
-          <td>
-           Yes
+           是
           </td>
          </tr>
          <tr>
           <td>
-           Terror
+           突袭天选者补给线
           </td>
           <td>
-           Retaliation
-          </td>
-          <td>
-           NA
-          </td>
-          <td>
-           8 + Haven Advisor
-          </td>
-          <td>
-           Alerted
-          </td>
-          <td>
-           Fixed Exit
-          </td>
-          <td>
-           No
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Invasion
-          </td>
-          <td>
-           Defend
-          </td>
-          <td>
-           NA
-          </td>
-          <td>
-           10 + Haven Advisor
-          </td>
-          <td>
-           Alerted
-          </td>
-          <td>
-           Fixed Exit
-          </td>
-          <td>
-           Yes
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Defend
-          </td>
-          <td>
-           Defend
-          </td>
-          <td>
-           NA
-          </td>
-          <td>
-           8 + Haven Advisor
-          </td>
-          <td>
-           Alerted
-          </td>
-          <td>
-           Countdown Exit
-          </td>
-          <td>
-           No
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Jailbreak
-          </td>
-          <td>
-           Liberation
-          </td>
-          <td>
-           12 (Evac)
-          </td>
-          <td>
-           8
-          </td>
-          <td>
-           Yes
-          </td>
-          <td>
-           Fixed Exit
-          </td>
-          <td>
-           No
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Rendezvous
-          </td>
-          <td>
-           Liberation
-          </td>
-          <td>
-           NA
-          </td>
-          <td>
-           Haven Advisor + up to 5 rebels
-          </td>
-          <td>
-           No
-          </td>
-          <td>
-           Evac Flare
-          </td>
-          <td>
-           Yes
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Intel Raid
-          </td>
-          <td>
-           Liberation
-          </td>
-          <td>
-           NA
-          </td>
-          <td>
-           8 + Haven Advisor + up to 5 rebels
-          </td>
-          <td>
-           Alerted
-          </td>
-          <td>
-           Evac Flare
-          </td>
-          <td>
-           No
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Supply Convoy
-          </td>
-          <td>
-           Liberation
-          </td>
-          <td>
-           NA
-          </td>
-          <td>
-           8 + Haven Advisor
-          </td>
-          <td>
-           Alerted
-          </td>
-          <td>
-           Evac Flare
-          </td>
-          <td>
-           No
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Recruit Raid
-          </td>
-          <td>
-           Liberation
-          </td>
-          <td>
-           NA
-          </td>
-          <td>
-           8 + Haven Advisor
-          </td>
-          <td>
-           Alerted
-          </td>
-          <td>
-           Countdown Exit
-          </td>
-          <td>
-           No
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Assault Network Tower
-          </td>
-          <td>
-           Liberation
-          </td>
-          <td>
-           Hidden
-          </td>
-          <td>
-           5
-          </td>
-          <td>
-           100%
-          </td>
-          <td>
-           Evac Flare
-          </td>
-          <td>
-           No
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Assault Alien Base
-          </td>
-          <td>
-           Liberation
-          </td>
-          <td>
-           NA
-          </td>
-          <td>
-           10
-          </td>
-          <td>
-           100%
-          </td>
-          <td>
-           Evac Flare
-          </td>
-          <td>
-           Yes
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Ambush
-          </td>
-          <td>
-           Covert Action
-          </td>
-          <td>
-           NA
-          </td>
-          <td>
-           4 + Covert Operatives
-          </td>
-          <td>
-           Alerted
-          </td>
-          <td>
-           Fixed Evac
-          </td>
-          <td>
-           No
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Big Supply Extraction
-          </td>
-          <td>
-           Covert Action
-          </td>
-          <td>
-           NA
-          </td>
-          <td>
-           8
-          </td>
-          <td>
-           Yes
-          </td>
-          <td>
-           Evac Flare
-          </td>
-          <td>
-           No
-          </td>
-         </tr>
-         <tr>
-          <td>
-           Locate Patrols
-          </td>
-          <td>
-           Covert Action
+           补给突袭
           </td>
           <td>
            NA
@@ -925,21 +674,388 @@
            6
           </td>
           <td>
-           Yes
+           快速反应
           </td>
           <td>
-           Evac Flare
+           是
           </td>
           <td>
-           Yes
+           撤离信号弹
+          </td>
+          <td>
+           是
           </td>
          </tr>
          <tr>
           <td>
-           Chosen Stronghold
+           肃清UFO
           </td>
           <td>
-           Covert Action
+           补给突袭
+          </td>
+          <td>
+           16（增援）
+          </td>
+          <td>
+           8
+          </td>
+          <td>
+           是
+          </td>
+          <td>
+           是
+          </td>
+          <td>
+           撤离信号弹
+          </td>
+          <td>
+           是
+          </td>
+         </tr>
+         <tr>
+          <td>
+           大报复（全歼敌人）
+          </td>
+          <td>
+           报复
+          </td>
+          <td>
+           NA
+          </td>
+          <td>
+           8 + 避难所顾问
+          </td>
+          <td>
+           快速反应（起始黄警 + 天选者）
+          </td>
+          <td>
+           否
+          </td>
+          <td>
+           固定撤离点
+          </td>
+          <td>
+           否
+          </td>
+         </tr>
+         <tr>
+          <td>
+           入侵
+          </td>
+          <td>
+           防御
+          </td>
+          <td>
+           NA
+          </td>
+          <td>
+           10 + 避难所顾问
+          </td>
+          <td>
+           快速反应（起始黄警 + 天选者）
+          </td>
+          <td>
+           否
+          </td>
+          <td>
+           固定撤离点
+          </td>
+          <td>
+           是
+          </td>
+         </tr>
+         <tr>
+          <td>
+           大报复（迎击空投）
+          </td>
+          <td>
+           防御
+          </td>
+          <td>
+           NA
+          </td>
+          <td>
+           8 + 避难所顾问
+          </td>
+          <td>
+           快速反应（起始黄警 + 天选者）
+          </td>
+          <td>
+           否
+          </td>
+          <td>
+           倒计时固定撤离点
+          </td>
+          <td>
+           否
+          </td>
+         </tr>
+         <tr>
+          <td>
+           越狱
+          </td>
+          <td>
+           解放
+          </td>
+          <td>
+           22-24（强制撤离）
+          </td>
+          <td>
+           8
+          </td>
+          <td>
+           是
+          </td>
+          <td>
+           是
+          </td>
+          <td>
+           固定撤离点
+          </td>
+          <td>
+           否
+          </td>
+         </tr>
+         <tr>
+          <td>
+           锄奸
+          </td>
+          <td>
+           解放
+          </td>
+          <td>
+           NA
+          </td>
+          <td>
+           避难所顾问 + 最多5名反抗军
+          </td>
+          <td>
+           快速反应
+          </td>
+          <td>
+           是
+          </td>
+          <td>
+           撤离信号弹
+          </td>
+          <td>
+           是
+          </td>
+         </tr>
+         <tr>
+          <td>
+           小报复（情报突袭）
+          </td>
+          <td>
+           解放
+          </td>
+          <td>
+           NA
+          </td>
+          <td>
+           8 + 避难所顾问 + 最多5名反抗军
+          </td>
+          <td>
+           快速反应（起始黄警 + 天选者）
+          </td>
+          <td>
+           否
+          </td>
+          <td>
+           撤离信号弹
+          </td>
+          <td>
+           否
+          </td>
+         </tr>
+         <tr>
+          <td>
+           小报复（补给突袭）
+          </td>
+          <td>
+           解放
+          </td>
+          <td>
+           NA
+          </td>
+          <td>
+           8 + 避难所顾问
+          </td>
+          <td>
+           快速反应（起始黄警 + 天选者）
+          </td>
+          <td>
+           否
+          </td>
+          <td>
+           撤离信号弹
+          </td>
+          <td>
+           否
+          </td>
+         </tr>
+         <tr>
+          <td>
+           小报复（招募突袭）
+          </td>
+          <td>
+           解放
+          </td>
+          <td>
+           NA
+          </td>
+          <td>
+           8 + 避难所顾问
+          </td>
+          <td>
+           快速反应（起始黄警 + 天选者）
+          </td>
+          <td>
+           否
+          </td>
+          <td>
+           倒计时固定撤离点
+          </td>
+          <td>
+           否
+          </td>
+         </tr>
+         <tr>
+          <td>
+           突袭网络塔
+          </td>
+          <td>
+           解放
+          </td>
+          <td>
+           隐藏
+          </td>
+          <td>
+           5
+          </td>
+          <td>
+           是（必须达到100%）
+          </td>
+          <td>
+           是
+          </td>
+          <td>
+           撤离信号弹
+          </td>
+          <td>
+           否
+          </td>
+         </tr>
+         <tr>
+          <td>
+           突袭变种人基地
+          </td>
+          <td>
+           解放
+          </td>
+          <td>
+           NA
+          </td>
+          <td>
+           10
+          </td>
+          <td>
+           是（必须达到100%）
+          </td>
+          <td>
+           是
+          </td>
+          <td>
+           撤离信号弹
+          </td>
+          <td>
+           是
+          </td>
+         </tr>
+         <tr>
+          <td>
+           隐秘伏击
+          </td>
+          <td>
+           隐秘行动
+          </td>
+          <td>
+           NA
+          </td>
+          <td>
+           4 + 隐秘行动人员
+          </td>
+          <td>
+           快速反应
+          </td>
+          <td>
+           否
+          </td>
+          <td>
+           固定撤离点
+          </td>
+          <td>
+           否
+          </td>
+         </tr>
+         <tr>
+          <td>
+           大型空运补给拦截
+          </td>
+          <td>
+           隐秘行动
+          </td>
+          <td>
+           NA
+          </td>
+          <td>
+           8
+          </td>
+          <td>
+           是
+          </td>
+          <td>
+           100%潜入
+          </td>
+          <td>
+           撤离信号弹
+          </td>
+          <td>
+           否
+          </td>
+         </tr>
+         <tr>
+          <td>
+           定位巡逻队
+          </td>
+          <td>
+           隐秘行动
+          </td>
+          <td>
+           NA
+          </td>
+          <td>
+           6
+          </td>
+          <td>
+           是
+          </td>
+          <td>
+           100%潜入
+          </td>
+          <td>
+           撤离信号弹
+          </td>
+          <td>
+           是
+          </td>
+         </tr>
+         <tr>
+          <td>
+           天选者要塞
+          </td>
+          <td>
+           隐秘行动
           </td>
           <td>
            NA
@@ -948,13 +1064,16 @@
            5
           </td>
           <td>
-           100%
+           是（必须达到100%）
           </td>
           <td>
-           Not Available
+           是
           </td>
           <td>
-           No
+           不可用
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
@@ -962,7 +1081,7 @@
            Avenger Defense
           </td>
           <td>
-           Defend
+           防御
           </td>
           <td>
            NA
@@ -971,13 +1090,16 @@
            12
           </td>
           <td>
-           Alerted
+           快速反应（起始黄警 + 天选者）
           </td>
           <td>
-           Not Available
+           否
           </td>
           <td>
-           No
+           不可用
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
@@ -985,7 +1107,7 @@
            Chosen Avenger Defense
           </td>
           <td>
-           Defend
+           防御
           </td>
           <td>
            NA
@@ -994,67 +1116,76 @@
            10
           </td>
           <td>
-           Alerted
+           快速反应（起始黄警 + 天选者）
           </td>
           <td>
-           Not Available
+           否
           </td>
           <td>
-           No
+           不可用
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           ADVENT Blacksite
+           变种人黑地
           </td>
           <td>
-           Golden Path
+           黄金之路
           </td>
           <td>
-           Hidden
+           隐藏
           </td>
           <td>
            8
           </td>
           <td>
-           100%
+           是（必须达到100%）
           </td>
           <td>
-           Fixed Exit
+           是
           </td>
           <td>
-           No
+           固定撤离点
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           ADVENT Forge
+           变种人锻造厂
           </td>
           <td>
-           Golden Path
+           黄金之路
           </td>
           <td>
-           Hidden
+           隐藏
           </td>
           <td>
            10
           </td>
           <td>
-           100%
+           是（必须达到100%）
           </td>
           <td>
-           Fixed Exit
+           是
           </td>
           <td>
-           No
+           固定撤离点
+          </td>
+          <td>
+           否
           </td>
          </tr>
          <tr>
           <td>
-           ADVENT Psi Gate
+           变种人灵能门
           </td>
           <td>
-           Golden Path
+           黄金之路
           </td>
           <td>
            NA
@@ -1063,21 +1194,24 @@
            10
           </td>
           <td>
-           100%
+           是（必须达到100%）
           </td>
           <td>
-           Evac Flare
+           是
           </td>
           <td>
-           Yes
+           撤离信号弹
+          </td>
+          <td>
+           是
           </td>
          </tr>
          <tr>
           <td>
-           Central Network Broadcast
+           中央信号塔
           </td>
           <td>
-           Golden Path
+           黄金之路
           </td>
           <td>
            NA
@@ -1086,21 +1220,24 @@
            8
           </td>
           <td>
-           No
+           快速反应
           </td>
           <td>
-           Not Available
+           花费情报
           </td>
           <td>
-           Yes
+           不可用
+          </td>
+          <td>
+           是
           </td>
          </tr>
          <tr>
           <td>
-           Assault Alien Fortress
+           突袭外星人要塞
           </td>
           <td>
-           Golden Path
+           黄金之路
           </td>
           <td>
            NA
@@ -1109,13 +1246,16 @@
            12
           </td>
           <td>
-           No
+           快速反应
           </td>
           <td>
-           Not Available
+           否
           </td>
           <td>
-           No
+           不可用
+          </td>
+          <td>
+           否
           </td>
          </tr>
         </tbody>
@@ -1123,66 +1263,66 @@
       </div>
       <p>
        <b>
-        Notes
+        注释
        </b>
       </p>
       <ul>
        <li>
-        Mission Timer
+        任务计时器
         <ul>
          <li>
-          This value is increased by + 4 in Rookie difficulty and by +2 in Veteran
+          该值在新兵难度下增加+4，在老兵难度下增加+2。
          </li>
          <li>
-          Objective timers only affect the primary objective. Failing to complete the objective before the timer expires will result in failing the mission but you can still evac your soldiers.
+          目标计时器仅影响主要目标。在计时结束前未完成目标会导致任务失败，但仍可让士兵撤离。
          </li>
          <li>
-          Evac timers put an absolute limit on mission duration. Any soldier still on the map when the timer reaches 0 is lost (captured). When the timer reaches 1, the last turn start (there is no "0 turns left" turn).
+          撤离计时器对任务持续时间设定了绝对限制。当计时器归零时，仍在地图上的士兵将被视为被俘。当计时器显示1时，表示最后一个回合开始（没有“0回合剩余”的回合）。
          </li>
          <li>
-          Reinforcement timers are delays before increasingly strong reinforcements start dropping. You can still complete a mission after such a timer reaches zero but it will become harder with each wave. This timer starts only after you break concealment.
+          增援计时器表示在该时间结束后，敌人开始逐波派遣更强的增援。计时器归零后仍可完成任务，但会越来越困难。该计时器在破隐后才开始。
          </li>
          <li>
-          Security Level timers do not start until you break concealment and it increases once per turn until it reaches 10 and an additional 1 when the squad is revealed. Hacking the door to the VIP or otherwise revealing the VIP instantly sets the security level to 10. When it reaches 10, reinforcements start coming quickly.
+          安保等级计时器在破隐前不会启动，每回合增加1点，达到10后触发快速增援。小队暴露时立即再增加1点。入侵VIP房门或以其他方式暴露VIP会直接将安保等级设为10。
          </li>
          <li>
-          Several non timed missions (such as the Blacksite and Network Tower) include a hidden reinforcement timer.
+          一些非限时任务（如黑地和网络塔）包含隐藏的增援计时器。
          </li>
         </ul>
        </li>
        <li>
-        Infiltration
+        潜入
         <ul>
          <li>
-          Yes - the squad can infiltrate the site to reduce enemy strength
+          是 - 代表小队可以潜入任务地点以降低敌人兵力
          </li>
          <li>
-          100% - infiltration needs to reach at least this value before mission can be launched
+          100% - 潜入至少需要达到该值才能开始任务
          </li>
          <li>
-          No - squad goes directly into combat, skipping infiltration
+          快速反应 - 小队直接进入战斗，跳过潜入过程
          </li>
          <li>
-          Alerted - mission starts immediately, no squad concealment, enemies start on yellow alert
+          起始黄警 - 任务开始时敌人就处于黄色警戒状态
          </li>
         </ul>
        </li>
        <li>
-        Evacuation
+        撤离
         <ul>
          <li>
-          Evac Flare - squad can call the Skyranger to be able to evacuate the mission
+          撤离信号弹 - 小队可以呼叫天际游侠号撤离任务
          </li>
          <li>
-          Fixed Exit - squad has to reach exit area
+          固定撤离点 - 小队必须到达指定的撤离区域
          </li>
          <li>
-          Countdown Exit - squad has to wait until exit area becomes active
+          倒计时固定撤离点 - 小队必须等待倒计时归零后撤离区域激活
          </li>
         </ul>
        </li>
        <li>
-        Full Salvage - if yes, alien corpses and material will be recovered if the battle is won; if no, only actual 'item' loot (such as datapads) is recovered
+        全面回收 - 若为“是”，则战斗胜利后可回收外星人尸体和战利品；若为“否”，则只可获得拾取的战利品
        </li>
       </ul>
       <h2>
