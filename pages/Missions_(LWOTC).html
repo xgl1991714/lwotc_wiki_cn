@@ -88,7 +88,7 @@
               3
              </span>
              <span class="toctext">
-              Generating Missions
+              任务生成
              </span>
             </a>
            </li>
@@ -98,7 +98,7 @@
               4
              </span>
              <span class="toctext">
-              Types of Missions
+              任务类型
              </span>
             </a>
             <ul>
@@ -108,7 +108,7 @@
                 4.1
                </span>
                <span class="toctext">
-                Guerrilla Operations
+                游击行动
                </span>
               </a>
              </li>
@@ -118,7 +118,7 @@
                 4.2
                </span>
                <span class="toctext">
-                Retaliation Missions
+                报复任务
                </span>
               </a>
              </li>
@@ -128,7 +128,7 @@
                 4.3
                </span>
                <span class="toctext">
-                Liberation Missions
+                解放任务
                </span>
               </a>
              </li>
@@ -138,7 +138,7 @@
                 4.4
                </span>
                <span class="toctext">
-                Covert Action Missions
+                隐秘行动任务
                </span>
               </a>
              </li>
@@ -148,7 +148,7 @@
                 4.5
                </span>
                <span class="toctext">
-                UFO Hunt
+                UFO猎杀
                </span>
               </a>
              </li>
@@ -158,7 +158,7 @@
                 4.6
                </span>
                <span class="toctext">
-                Chosen Sabotage
+                天选者破坏行动
                </span>
               </a>
              </li>
@@ -168,7 +168,7 @@
                 4.7
                </span>
                <span class="toctext">
-                Golden Path Missions
+                黄金之路任务
                </span>
               </a>
              </li>
@@ -180,7 +180,7 @@
               5
              </span>
              <span class="toctext">
-              Collecting Enemy Corpses
+              收集敌人尸体
              </span>
             </a>
             <ul>
@@ -190,7 +190,7 @@
                 5.1
                </span>
                <span class="toctext">
-                Strategy
+                战术
                </span>
               </a>
              </li>
@@ -948,7 +948,7 @@
          </tr>
          <tr>
           <td>
-           突袭变种人基地
+           突袭变种人总部
           </td>
           <td>
            解放
@@ -1078,7 +1078,7 @@
          </tr>
          <tr>
           <td>
-           Avenger Defense
+           保卫复仇者号
           </td>
           <td>
            防御
@@ -1090,7 +1090,7 @@
            12
           </td>
           <td>
-           快速反应（起始黄警 + 天选者）
+           快速反应（起始黄警）
           </td>
           <td>
            否
@@ -1104,7 +1104,7 @@
          </tr>
          <tr>
           <td>
-           Chosen Avenger Defense
+           天选者复仇者号防御战
           </td>
           <td>
            防御
@@ -1327,73 +1327,73 @@
       </ul>
       <h2>
        <span class="mw-headline" id="Generating_Missions">
-        Generating Missions
+        任务生成
        </span>
       </h2>
       <p>
-       Missions spawn automatically as the days pass, and expire after a given window of time. The mission is not visible at this time; the local haven must collect enough intel to reveal the mission. Assigning more resistance members to the "intel" job can make missions considerably easier by discovering missions earlier and allowing more time to infiltrate. A mission's expiration timer starts when it is created, not when it is discovered; most infiltration missions have a base duration of 18 days, which is randomized by a few days each time a mission is created.
+       任务会随着时间的推移自动生成，并在一定时间窗口后过期。任务在初始阶段是不可见的；当地避难所必须收集足够的情报才能揭示任务。将更多反抗军人员分配到“情报”工作可以显著提高任务的发现效率，从而有更大概率更早发现任务，因此获得更多渗透时间。任务的过期计时器在任务生成时就开始计时，而不是在任务被揭示时开始；大多数渗透任务的基础持续时间为18天，每次生成时会随机上下浮动几天。
       </p>
       <p>
-       Havens each generate "intel points" from having personnel assigned to intel gathering. These points are applied to undiscovered missions in the region at certain update intervals, currently 4 times a day (every 6 hours). Each mission keeps a pool of collected intel points. The difficulty of discovering a certain type of mission is controlled by two numbers: "required intel" and "discovery chance". A mission cannot be detected until you generate intel equal to the "required intel" value. Once the minimum is reached there is a random chance (1/4 of discovery chance) to discover the mission at every update. The probability is based on the mission's "percent chance" stat, multiplied by the number of intel points collected past the required minimum.
+       每个避难所会根据分配到情报收集岗位的人员数量生成“情报点”。这些点数会在固定的更新间隔内（当前为每天4次，即每6小时一次）应用到该地区尚未被发现的任务上。每个任务都有一个情报点数池。发现某类任务的难度由两个数值决定：“所需情报点”和“发现几率”。在生成的情报点未达到“所需情报点”之前，该任务无法被发现。一旦达到最低所需值，在每次更新时将有一个随机几率（为“发现几率”的1/4）来发现任务。实际概率基于任务的“百分比几率”属性，并乘以超过所需情报点的部分。
       </p>
       <p>
-       There is a flat % detection bonus based on the force level and also based on difficulty. Additionally there is a flat % detection bonus for the first 5 days of a campaign to make detecting the first two missions of a campaign less RNG.
+       此外，根据敌方科技等级和游戏难度，会有一个固定的百分比发现加成。为了减少前期任务发现的随机性，开局前5天还会额外给予固定的发现加成，用以更容易发现前两个任务。
       </p>
       <p>
-       In the table below, a basic level-0 resistance member is defined as one "intel point" per day. A level-1 resistance member is worth 1.5 points, a level-2 is worth 2, and the Avenger scanning is worth 4. A scientist assigned as haven liaison adds an extra 20% bonus to the entire haven. Each faceless reduces overall intel point generation by 3/5/6/7% depending on difficulty (regardless of what job the faceless is doing).
+       在下表中，基础的0级反抗军成员每天可提供1个“情报点”。1级成员提供1.5点，2级成员提供2点，而“复仇者号”扫描则提供4点。将科学家指派为避难所顾问会为整个避难所提供额外20%的加成。每一个潜伏的“无面怪”将根据难度降低总情报点生成量，降低幅度为3%、5%、6%或7%（与其当前岗位无关）。
       </p>
       <table class="wikitable">
        <tbody>
         <tr>
          <td>
           <b>
-           Category
+           类别
           </b>
          </td>
          <th>
-          Research
+          研究
          </th>
          <th>
-          Data
+          数据点
          </th>
          <th>
           VIP
          </th>
          <th>
-          Prisoners
+          囚犯
          </th>
          <th>
-          Liberation 1
+          解放1
          </th>
         </tr>
         <tr>
          <td>
           <b>
-           Mission Types
+           任务类型
           </b>
          </td>
          <td>
-          Hacking
+          侵入
          </td>
          <td>
-          Hacking, Destroy
+          侵入、破坏
          </td>
          <td>
-          Rescue/Extract
+          营救/护送
          </td>
          <td>
-          Jailbreak
+          越狱
          </td>
          <td>
-          Hacking
+          侵入
          </td>
         </tr>
         <tr>
          <td>
           <b>
-           Required intel
+           最低情报
           </b>
-          (points)
+          (点数)
          </td>
          <td>
           24
@@ -1414,9 +1414,9 @@
         <tr>
          <td>
           <b>
-           Discovery Chance
+           发现概率
           </b>
-          (per point)
+          (每点数)
          </td>
          <td>
           0.85%
@@ -1438,65 +1438,65 @@
       </table>
       <p>
        <b>
-        Example:
+        示例：
        </b>
-       A haven with six level-0 resistance members and one level-1 assigned to intel, plus a scientist liaison, generates 9 "points" per day. The first mission in the liberation chain spawns. The haven can't detect this mission until it generates 22 points, which takes just under 2.5 days.
+       一个避难所有六名0级反抗军成员和一名1级反抗军成员被分配到情报岗位，同时有一名科学家担任顾问，每天可生成9个“情报点”。解放链的第一个任务生成。避难所在生成22个情报点之前无法发现该任务，这大约需要不到2.5天。
       </p>
       <p>
-       One day after that, the haven has an 4.5% chance to detect the mission: it has 9 intel points in the pool (subtracting out the 22 needed for the required intel) times 2 per point, resulting in 18 discovery chance which means you'll have 4.5% chance to detect the mission every 6 hours. One day later, the haven has 18 points and has a 36 discovery chance (9% to detect every 6 hours).
+       再过一天后，避难所每6小时有4.5%的几率发现该任务：任务情报池中有9个点（扣除掉所需的22点后剩下的部分），每个超出的点数提供2点发现几率，总共18点发现几率，因此每6小时有4.5%的概率发现该任务。再过一天，避难所有18个超出点，发现几率为36%（每6小时有9%的发现概率）。
       </p>
       <h2>
        <span class="mw-headline" id="Types_of_Missions">
-        Types of Missions
+        任务类型
        </span>
       </h2>
       <p>
-       The type of mission affects a variety of factors: what the primary objective is, what type of rewards will be received, how long the squad has to complete the objective, how strong of a force the enemy will tend to field relative to other missions in the region, whether the squad starts concealed or not, and even where the squad can extract from.
+       任务类型影响多种因素：主要目标是什么、可获得的奖励类型、小队完成任务的时间限制、敌军在该区域出动兵力的强度、小队是否以潜行状态开始、以及小队的撤离点位置。
       </p>
       <p>
-       Perhaps the most important factor is whether or not a squad needs to infiltrate or not, and how long the squad has to do it. For more information on infiltration mechanics, see the
+       其中最关键的因素可能是小队是否需要渗透以及渗透所需的时间。有关渗透机制的更多信息，请参阅
        <a href="https://www.ufopaedia.org/index.php?title=Infiltration_(LW2)" target="_blank" title="Infiltration (LW2)">
-        Infiltration
+        渗透潜入
        </a>
-       page for details.
+       页面。
       </p>
       <h3>
        <span class="mw-headline" id="Guerrilla_Operations">
-        Guerrilla Operations
+        游击行动
        </span>
       </h3>
       <p>
-       These missions will generate regularly regardless of ADVENT activity in a region. XCOM will infiltrate some city and complete some useful objective, typically acquiring personnel and/or intel in the process.
+       这些任务将定期生成，与该区域的变种人活动无关。XCOM将渗透某个城市并完成一些有用的目标，通常在过程中获得人员和/或情报。
       </p>
       <ul>
        <li>
-        Jailbreak – XCOM must infiltrate an ADVENT jail and rescue 2-4 prisoners. Success will add them to the region's Haven. At least one must be saved for the mission to be a success (any others are optional/extra).
+        越狱 – XCOM必须渗透变种人监狱并解救2至4名囚犯。成功后他们将加入该区域的避难所。至少要救出一人任务才算成功（其余为可选/额外）。
         <i>
-         Concealed Start
+         起始隐蔽
         </i>
         .
         <ul>
          <li>
-          Prisoners can be new soldiers if the region already has a large number of rebels.
+          如果该区域已有大量反抗军，囚犯中可能会包含新士兵。
          </li>
         </ul>
        </li>
       </ul>
       <ul>
        <li>
-        Rescue VIP - Two variants;
+        营救VIP - 有两种变体;
         <ul>
          <li>
-          XCOM must lead a VIP (a soldier, scientist, or engineer) to the extraction point.
+          XCOM必须护送一名VIP（士兵、科学家或工程师）前往撤离点。
           <i>
-           Revealed Start
+           起始暴露
           </i>
           .
          </li>
          <li>
-          XCOM must secure a vehicle containing the VIP, free them, then lead them to the extraction point.
+          XCOM必须夺取一辆载有VIP的车辆、释放VIP并护送其前往撤离点。
           <i>
-           Concealed Start
+           起始隐蔽
           </i>
          </li>
         </ul>
@@ -1504,36 +1504,36 @@
       </ul>
       <ul>
        <li>
-        Hack a Workstation - XCOM must hack a particular workstation. Awards intel upon completion.
+        入侵工作站 -  XCOM必须入侵特定工作站。完成后可获得情报奖励。
         <i>
-         Concealed Start
+         起始隐蔽
         </i>
         .
        </li>
       </ul>
       <ul>
        <li>
-        Capture or Kill VIP - XCOM must capture or kill an enemy VIP and then extract from the mission. The VIP has
+        捕获或击毙VIP - XCOM必须捕获或击杀一名敌方VIP并撤离。该VIP具有
         <a href="../pages/Perk_List_(LWOTC).html#Shadowstep" title="Perk List (LWOTC)">
-         Shadowstep
+         暗影步
         </a>
-        so that they cannot be killed by inadvertent reaction attacks. This mission may or may not contain faceless but we are unable to detect them and won't reflect in the detected baseline enemy activity.
+        技能，不会被反应射击意外击杀。此任务可能包含无面怪，但由于无法侦测，不会反映在已知敌人数量中。
         <i>
-         Concealed Start
+         起始隐蔽
         </i>
        </li>
       </ul>
       <ul>
        <li>
-        Smash and Grab - Raid ADVENT warehouses/depots to obtain resources. There are two types:
+        补给箱搜寻/夺取 - 突袭变种人仓库/据点以获取资源。有两种类型：
         <ul>
          <li>
-          Extract Crates - XCOM must mark crates spread throughout the field so that Firebrand can receive them and then evac once . You must acquire at least 4 crates for the mission to be successful. When the squad is revealed, ADVENT will be marking 2 crates every other turn to recover them but can be overrided with our own marks. After the squad is revealed, ADVENT will continuously send reinforcements after 7 turns to stop you in which you must evac. Concealed Start
+          提取物资箱 - XCOM必须标记散布在战场各处的箱子，让红恶魔号接收后撤离。任务至少需获取4个箱子才算成功。当小队暴露后（黑暗事件导致的暴露则为接战后），变种人会每两回合标记2个箱子试图回收，但可被XCOM的标记覆盖。暴露7回合后变种人会每回合派遣增援，届时必须尽快撤离。起始隐蔽
          </li>
          <li>
-          Seize ADVENT resource cache - XCOM must infiltrate an ADVENT warehouse and recover at least one of 5-6 crates throughout the building. After 12 turns, ADVENT will continuously send reinforcements to stop you in which you must evac to escape. After FL7, there is a 10% chance larger warehouses can be found which will have 2 additional crates to recover.
+          夺取变种人资源缓存 - XCOM必须渗透变种人仓库，并从建筑内5-6个箱子中至少回收一个。第12回合后变种人会每回合派遣增援，届时必须尽快撤离以逃脱。在敌方科技等级达到7级（FL7）后，有10%几率生成更大的仓库，内含额外2个箱子。
           <i>
-           Revealed Start
+           起始暴露
           </i>
          </li>
         </ul>
@@ -1541,80 +1541,80 @@
       </ul>
       <ul>
        <li>
-        Destroy an Alien Relay - XCOM must destroy an alien's relay before it completes transferring data. There are two types:
+        摧毁外星中继器 - XCOM必须在中继器完成数据传输前将其摧毁。有两种类型：
         <ul>
          <li>
-          Destroy Relay - XCOM must find and destroy the relay within 12 turns before it completes transferring data.
+          摧毁中继器 - XCOM必须在12回合内找到并摧毁中继器，阻止其完成数据传输。
          </li>
          <li>
-          Sabotage Transmitter - XCOM must find and plant an X4 in order to be able to destroy the transmitter before it completes transferring data. There is only 4 turns before it completes but there are small power nodes spread throughout the mission that can be destroyed granting 1 additional turn to get to the transmitter.
+          破坏发射器 - XCOM必须找到并安装X4炸药，以摧毁中继器。只有4回合时间，但任务中散布有小型供电节点，每摧毁一个可延长1回合的时间。
          </li>
         </ul>
        </li>
       </ul>
       <h3>
        <span class="mw-headline" id="Retaliation_Missions">
-        Retaliation Missions
+        报复任务
        </span>
       </h3>
       <p>
-       Retaliation missions trigger with increasing frequency and severity as XCOM takes action in a particular region and draws attention towards it. Retaliation missions have no infiltration timer. The Haven Advisor of a region, if a soldier, will typically be present at these missions, alongside various resistance personnel outfitted with the basic weapons and equipment that rookie XCOM personnel deploy with.
+       当XCOM在某个区域持续展开行动并吸引到变种人的注意后，报复任务将会以更高的频率和更严重的形式触发。报复任务没有渗透计时器。若该区域的避难所顾问是士兵，他们通常会与携带基础装备的反抗军人员一同出现在这些任务中。
       </p>
       <ul>
        <li>
-        Rendezvous: When XCOM rescues or recruits resistance members, there is a chance that they may be Faceless; when Faceless disguised as members of the Resistance is detected as they go to meet with their ADVENT handlers, Resistance personnel from the local haven will deploy to the scene and hunt them down. You will not be able to arm or equip a squad to this mission. XCOM must detect Faceless by stationing a soldier as the Haven advisor.
+        锄奸：当XCOM营救或招募反抗军成员时，这些人可能是无面怪；当这些伪装者在前往与变种接头时被识破，当地避难所的反抗军成员将出动追捕他们。无法为该任务装备小队。XCOM必须通过将士兵驻扎为避难所顾问来侦测无面怪。
         <i>
-         Concealed Start
+         起始隐蔽
         </i>
-        .
+        。
        </li>
       </ul>
       <ul>
        <li>
-        Supply Convoy: XCOM must deploy a squad to defend a supply convoy and its Resistance personnel from ADVENT attacks.
+        补给报复：XCOM必须派遣小队防御补给车队和反抗军人员一起抵御变种人的攻击。
         <i>
-         No concealment
+         起始暴露
         </i>
-        .
+        。
        </li>
       </ul>
       <ul>
        <li>
-        Intel Raid: ADVENT attacks a Resistance listening post and XCOM must deploy a squad to defend its equipment and Resistance personnel.
+        情报报复：变种人袭击反抗军组织的监听站，XCOM必须派遣小队保卫设备和反抗军人员。
         <i>
-         No concealment
+         起始暴露
         </i>
-        .
+        。
        </li>
       </ul>
       <ul>
        <li>
-        Recruitment Raid: ADVENT forces attack Resistance recruiters within a region. XCOM must deploy a squad and extract those Resistance members.
+        招募报复：变种人部队袭击该区域的反抗军招募行动。XCOM必须派出小队并营救这些反抗军成员。
         <i>
-         No concealment
+         起始暴露
         </i>
-        .
+        。
        </li>
       </ul>
       <ul>
        <li>
-        Full Retaliation: XCOM must defend the Haven and it's Resistance members against an onslaught of ADVENT forces until the Skyranger can get into position for extraction. This mission usually comes in two parts.
+        全面报复：XCOM必须保护避难所和反抗军人员免受变种人的大规模攻击，直到天际游侠号到达撤离位置。此任务通常分为两个阶段：
         <ul>
          <li>
           <b>
-           Retaliation 1
+           反制任务（报复1）
           </b>
-          : This will be a destroy the relay mission but the briefing will state that ADVENT is searching for the haven and that you need to prevent a
+          ：这实际上是一个摧毁中继器的任务，但简报会提示变种人正在搜寻据点，你需要阻止
           <b>
-           DATA LEAK
+           数据泄露
           </b>
-          . Completing this mission keeps the haven safe. (If you don't detect this mission, you go straight to a full retaliation.)
+          。完成该任务可以保护据点安全。（如果未能侦测到这个任务，则会直接进入全面报复。）
          </li>
          <li>
           <b>
-           Full retaliation (Retaliation 2)
+           全面报复（报复2）
           </b>
-          : XCOM must defend the Haven. This mission comes in two different flavours:
+          ：XCOM必须防守避难所。任务有两种形式：
          </li>
         </ul>
        </li>
@@ -1623,164 +1623,167 @@
        <dd>
         <ol>
          <li>
-          Many ADVENT in the AO trying to kill members of your resistance haven. You must rush to kill them to save resistance members. This mission will not yield corpses.
+          全歼敌人 - 大量变种人部队在区域中试图杀害反抗军成员。你必须迅速击杀敌人以拯救反抗军人员。本任务不会获得尸体。
          </li>
          <li>
-          ADVENT drops unlimited reinforcements and you must rally all resistance members and soldiers to the EVAC zone to save them. This mission will also not yield corpses.
+          迎击空投 - 变种人不断投放增援部队，你必须指挥所有反抗军成员和士兵撤退至撤离区以拯救他们。本任务也不会获得尸体。
          </li>
         </ol>
        </dd>
       </dl>
       <ul>
        <li>
-        Region Invasion: ADVENT attempts to retake a liberated region by assaulting a city center. XCOM must destroy a psionic relay that summons continuous reinforcements, then eliminate any remaining forces.
+        区域入侵：变种人试图通过攻击市中心重新夺回已解放区域。XCOM必须摧毁一个不断召唤援军的灵能中继器，然后消灭剩余敌军。
         <i>
-         No concealment
+         起始暴露
         </i>
         .
        </li>
       </ul>
       <h3>
        <span class="mw-headline" id="Liberation_Missions">
-        Liberation Missions
+        解放任务
        </span>
       </h3>
       <p>
-       As part of its attempts to liberate a region from ADVENT control, XCOM will conduct a set sequence of five operations. The early missions are difficult to detect and the later missions receive an substantial bonus to activity level, over and above the strength value of the region. The liberation missions 1 to 3 are clearly marked with the word "Liberation" (which was not the case in LW2).
+       为了解放某区域摆脱变种人的控制，XCOM将执行一组固定顺序的五个任务。前期任务较难侦测，后期任务则在敌方活跃度上获得额外加成，超出该区域的敌方强度值。解放任务1到3在任务标题中会明确标有“解放”字样（这在LW2中并非如此）。
       </p>
       <ul>
        <li>
         <b>
-         Liberation 1:
+         解放1：
         </b>
-        Hack Objective.
+        黑入目标。
         <i>
-         Concealed Start
+         起始隐蔽
         </i>
-        .
+        。
        </li>
        <li>
         <b>
-         Liberation 2:
+         解放2：
         </b>
-        Rescue Defector. XCOM must rescue or extract a VIP from a city location and move to the extraction point. This mission has a +1 strength modifier meaning there will be more enemies than normal.
+        营救叛逃者。XCOM必须从城市中营救或撤离一名VIP并前往撤离点。此任务有+1兵力修正，意味着敌人数量将高于正常水平。
         <i>
-         Concealed start or Revealed based on mission type
+         根据任务类型为隐蔽或暴露开始。
         </i>
        </li>
        <li>
         <b>
-         Liberation 3:
+         解放3：
         </b>
-        Hinder ADVENT Operations. This mission has a +2 strength modifier meaning there will be more enemies than normal. There are potential mission types:
+        破坏变种人行动。此任务有+2兵力修正，敌人数量进一步提升。可能的任务类型包括：
         <ul>
          <li>
-          Capture or Kill VIP
+          捕获或击杀VIP
          </li>
          <li>
-          Destroy the Relay
+          摧毁中继器
          </li>
         </ul>
        </li>
        <li>
         <b>
-         Liberation 4
+         解放4：
         </b>
-        - Regional Network Tower Liberation: XCOM must deploy to and liberate an ADVENT network tower. This will not expire once unlocked, and is quite difficult. A small squad (up to five soldiers) must hack a console at the far end of the map. Doing so disables the reinforcement timer and stuns all remaining enemies for 2 turns. The mission ends only when there are no remaining enemies, and reinforcements will come rapidly once the alarm is raised.
+        - 区域网络塔行动：XCOM必须部署小队解放当地的变种人网络塔。一旦发现就不会过期，但任务难度较高。最多五人小队。必须前往地图另一端的控制台进行黑入，成功后将暂停援军计时器并使所有敌人眩晕2回合。任务仅在敌人全部消灭后结束，警报触发后援军将快速增援。
         <i>
-         Concealed Start
+         起始隐蔽
         </i>
-        .
+        。
        </li>
        <li>
         <b>
-         Liberation 5
+         解放5：
         </b>
-        - ADVENT Facility Assault: XCOM must deploy to and overtake a well-defended ADVENT facility. This will not expire once unlocked, and is quite difficult.
+        -  变种人总部突袭：XCOM必须攻入并夺取一座防守严密的变种人总部设施。一旦发现就不会过期，难度同样较高。
         <i>
-         Concealed Start
+         起始隐蔽
         </i>
-        .
+        。
        </li>
       </ul>
       <p>
-       Note that failing or skipping a liberation mission does not reset the path. You'll just have to detect it again (unless it's the tower or base, which are persistent once you unlock them).
+       注意：失败或跳过某个解放任务并不会重置解放进度。你只需重新侦测该任务即可（网络塔和总部任务除外，它们一旦解锁就会持续存在）。
       </p>
       <p>
-       After Liberation 2 is completed, ADVENT's desired Strength in the region is increased by 1, effectively equal to having a Vigilance one higher than displayed in-game.
+       完成解放2后，变种人在该区域的目标势力等级将提升1，相当于该区域的警戒比界面上显示的多1。
       </p>
       <p>
-       Liberating a region adds 1 Vigilance to all unliberated regions world-wide. Adjacent regions receive an additional 1-2 Vigilance.
+       解放一个区域会为全球所有未解放区域增加1点警戒。相邻区域会额外增加1至2点警戒。
       </p>
       <h3>
        <span class="mw-headline" id="Covert_Action_Missions">
-        Covert Action Missions
+        隐秘行动任务
        </span>
       </h3>
       <p>
-       Covert Actions missions are initiated by completing certain Covert Actions. They are generally very beneficial missions.
+       隐秘行动任务由完成某些隐秘行动后触发，通常是非常有利的任务。
       </p>
       <ul>
        <li>
-        Ambush: Upon completing a covert action, there is a
+        伏击：在完成某个隐秘行动后，小队有
         <a href="../pages/Resistance_Ring_(LWOTC).html" title="Resistance Ring (LWOTC)">
-         chance
+         概率
         </a>
-        the covert squad gets ambushed and needs help evacuating to escape being captured. You can send up to 4 soldiers on a quick response mission (no infiltration) who start at a fixed evac location. There are roughly 8 enemies on this mission, 1 group next to the covert squad to incapacitate them with 2 other groups to halt their escape. You will also control the covert squad in which at least one soldier must reach the evac before reinforcements overwhelm you to succeed in the rescue and the covert action they were sent to.
+        遭到伏击并需要协助撤离以避免被俘。你可以派遣最多4名士兵执行这个快速响应（无需渗透）任务，他们会从固定的撤离点开始行动。任务中大约有8名敌人：1组靠近执行隐秘行动的小队，目的是击倒他们；还有2组试图阻止其逃脱。你也将控制隐秘小队，其中至少有一人必须成功抵达撤离点才能成功完成救援和他们原先的隐秘任务。
        </li>
        <li>
-        Big Supply Extraction: This is a normal supply extraction but with 18 crates instead of 12. However, Advent will mark 3 crates instead of 2.
+        大型空运补给拦截：这是普通的物资提取任务，但包含18个箱子而非12个。变种人会每回合标记3个箱子，而不是2个。
        </li>
        <li>
-        Locate Patrols: This is a normal troop column mission, except that you can only send up to 6 soldiers and it does not destroy strength in the target region. The number of enemies on this mission is based on its region strength as normal, but it is capped at 4.
+        定位巡逻队：这与普通的伏击列队任务类似，但你最多只能派遣6名士兵，而且该任务不会削弱目标区域的敌方兵力等级。敌人数量仍然依照该区域的兵力等级设定，但最多为4组。
        </li>
        <li>
-        Chosen Stronghold: After completing all 3 Chosen Hunt Cover Actions for one Chosen, you will be able to infiltrate their stronghold. You can only send up to 5 soldiers who will have to first work their way through an indoor maze of rooms filled with pods of 2-4 enemies. Make sure all your soldiers are on the elevator before you send them in to face the Chosen! You will load into a new map, where you will face a small pod before encountering the Chosen's Sarcophagus. You must first kill the Chosen, then damage the Sarcophagus as quickly as possible, dealing with reinforcements while the Chosen is inside the Sarcophagus. The Chosen will regain hit points for each turn the Sarcophagus remains intact, respawning when they reach 100% hp or when the Sarcophagus is destroyed. You must kill the Chosen one last time after their Sarcophagus is destroyed.
+        天选者要塞：当完成针对某位天选者的全部3个“追猎天选者”隐秘任务后，你将能渗透其要塞。你最多可派遣5名士兵，首先需要穿越一个由多个房间组成的室内迷宫，里面有多个2至4人的敌方小队。注意确保所有士兵都站在电梯上后再进入与天选者的战斗！
+        随后会进入一个新地图，先面对一个小型敌方队伍，然后到达天选者的石棺。你必须先击败天选者，然后尽快对石棺造成伤害，同时应对不断到来的增援。只要石棺未被摧毁，每回合天选者就会逐步恢复生命值，当其生命恢复至100%或石棺被摧毁时就会复活。摧毁石棺后，你必须再击杀一次天选者才能完成任务。
        </li>
       </ul>
       <h3>
        <span class="mw-headline" id="UFO_Hunt">
-        UFO Hunt
+        UFO猎杀
        </span>
       </h3>
       <p>
-       ADVENT may launch a dark event that sends a UFO to hunt the avenger. After 6-14 days, the UFO intercepts the avenger in which there is a 50% chance to avoid them. If successful, an avenger defense launches requiring XCOM to defend itself and destroy the spike emitting EMP preventing the avenger from escaping. The mission must be completed in order for XCOM to escape and continue the fight or all is lost. Once a campaign has experienced at least one avenger defense mission, any future UFO hunts have a 0/25/35/50% (based on difficulty) chance to intercept the avenger.
+       变种人可能发动一个黑暗事件，派遣UFO追踪复仇者号。在6至14天后，UFO会拦截复仇者号，有50%的概率成功躲避。如果未能躲避，将触发一次复仇者号防御战，XCOM必须防守并摧毁发出EMP脉冲的干扰塔以解除复仇者号的启动障碍。任务必须完成，失败意味着游戏结束。
+       一旦战役中至少触发过一次复仇者号防御战任务，以后再次被UFO追踪时，拦截成功的概率变为根据难度的0% / 25% / 35% / 50%。
       </p>
       <p>
-       A UFO may also be launched once XCOM completes a story mission objective (blacksite/forge/psi gate) with a 25/75/100% chance respectively and this can only occur once meaning that, for example, if the blacksite has triggered a hunt, then completing the psi gate will not trigger another. These UFOs are guaranteed to intercept the avenger unless one has already occurred in which it uses the interception chances after the first listed above.
+       当XCOM完成一个主线剧情任务（黑地 / 锻造厂 / 灵能门）后，也可能触发UFO猎杀，其概率分别为25%、75%、100%，且每个战役中只会触发一次。例如：如果完成黑地任务已触发过UFO追猎，则完成灵能门任务将不会再次触发。
+       这些由剧情触发的UFO猎杀必定会成功拦截复仇者号，除非之前已经发生过一次UFO猎杀事件，那么将按照上述拦截几率处理。
       </p>
       <h3>
        <span class="mw-headline" id="Chosen_Sabotage">
-        Chosen Sabotage
+        天选者破坏行动
        </span>
       </h3>
       <p>
-       At the end of each month, the Chosen's Knowledge bar fills and they choose an activity. Two of those activities spawn missions for XCOM to fight through.
+       每月月底，天选者的知识条会增长一次，并选择一个活动执行。其中有两个会触发XCOM可参与的任务。
       </p>
       <ul>
        <li>
         <b>
-         Chosen Supply Raid
+         天选者补给线突袭
         </b>
-        : This activity is available at knowledge tier 1. Some time after the activity is selected, a quick response full salvage supply raid mission will launch.
+        : 该活动在知识等级1时可用。在天选者选择该活动后的某个时间点，会触发一次快速响应的全面回收类型的物资突袭任务。
         <ul>
          <li>
-          It has a concealed start and squad size is limited to 6.
+          起始隐蔽，最多可派遣6人小队。
          </li>
          <li>
-          The mission is fixed at alert level 4 (including Chosen adjustment). This means that the expected enemy activity is around 13-15 including Chosen.
+          兵力等级固定为4（包括天选者调整），敌人数量预计为13-15人（含天选者）。
          </li>
          <li>
-          If the Chosen succeeds in this activity (i.e. the mission is ignored or failed), 1 strength is added to the region it is launched in and to 1 random adjacent region.
+          如果该任务被忽略或失败，该任务所在区域及一个随机邻近区域将各增加1点敌方兵力等级。
          </li>
          <li>
-          The Chosen will trigger the activity in a region they control that XCOM has contacted. This can fail if there is no contacted unliberated region under their control.
+          任务只会出现在天选者控制的、XCOM已联络的区域中。若无符合条件的区域，则该活动失败。
          </li>
          <li>
-          These missions are guaranteed to have Stun Lancers.
+          此任务必定包含强袭枪兵。
          </li>
          <li>
-          Completing this mission does not raise vigilance.
+          完成任务不会增加地区警戒。
          </li>
         </ul>
        </li>
@@ -1788,123 +1791,142 @@
       <ul>
        <li>
         <b>
-         Chosen Avenger Defense
+         天选者复仇者号防御战
         </b>
-        : When one of the Chosen reaches 100% Knowledge, they will launch an all-out assault on the Avenger. This Chosen Avenger Defense (CAD) will take place between 2 and 10 days after the beginning of the month in which the Chosen filled their bar. The mission composes of 30/34/36/40 enemies (based on difficulty) with 1 pod that guards the three various turret locations ( the large cannon and 2 sets of mini-turret mounted trucks )  within the map with the rest of the enemies slowly approaching the avenger. XCOM must defeat all enemies while also destroying the turrets before the avenger is destroyed. The avenger has 550 HP with the Chosen Cannon dealing 80 damage every 7/6/5/4 (based on difficulty) turns and the mini turrets dealing 4 damage each every turn. Only the cannon is required to destroy however destroying the turrets will be helpful.
+        ：当某个天选者的知识条达到100%，将在该月的第2至第10天之间发动对复仇者号的全面攻击。
+        <ul>
+         <li>
+          敌人数量依难度为：30 / 34 / 36 / 40。
+         </li>
+         <li>
+          任务地图包含三处驻守炮塔位置（大型加农炮和两组小型炮塔车）的敌方小队，其余敌人则会慢慢向复仇者号推进。
+         </li>
+         <li>
+          XCOM必须消灭所有敌人并摧为大型加农炮提供能量的电源车，防止复仇者号被摧毁。
+         </li>
+         <li>
+          复仇者号拥有550点生命值，大型加农炮按难度每7 / 6 / 5 / 4回合造成80点伤害，小型炮塔每回合各造成4点伤害。
+         </li>
+         <li>
+          必须摧毁大型加农炮的电源车才算任务成功，但摧毁小型炮塔也会有所帮助（会略微降低复仇者号受到的伤害）。
+         </li>
+        </ul>
        </li>
       </ul>
       <h3>
        <span class="mw-headline" id="Golden_Path_Missions">
-        Golden Path Missions
+        黄金之路任务
        </span>
       </h3>
       <p>
-       Some missions and activities are required for the story to proceed. These missions are collectively called "the golden path". All golden path missions require 100% infiltration before you can launch them. Regional strength does not affect the number of enemies on any golden path mission except for the Liberation Missions.
+       这些任务是剧情推进所必需的，被统称为“黄金之路”。所有黄金之路任务都要求100%渗透才能开始。除了解放任务外，区域兵力强度不影响敌人数量。
       </p>
       <ul>
        <li>
-        Skulljacking:
+        <b>
+        头颅接入：
+        </b>
         <ul>
          <li>
-          After skulljacking an officer for the first time, a codex will appear. If you kill it, you will retrieve its body, no matter whether you are on a full salvage mission or not. If you do not kill it, you will have to wait until you encounter another codex and kill it there. Skulljacking another officer will also spawn another codex.
+          首次对变种人军官进行头颅接入后，会生成一个原典。若将其击杀，不论是否为全面回收类型的任务，都会获得其尸体；若未击杀，需等待下次遇到原典再击杀。
          </li>
          <li>
-          After skulljacking a codex for the first time (and after researching Encrypted Codex Data in the Shadow Chamber), an avatar will appear. Just like the codex, you will retrieve its body as long as you kill it and you can continue skulljacking more codices if you fail to kill it; however, unlike the codex, avatars will not appear normally on missions - you will
+          首次对原典进行头颅接入后（并在暗影舱研究了解密原典脑数据后），将出现一只化身。和原典一样，只要击杀即可获得其尸体；如果未击杀，可以再次对原典进行头颅接入来推进剧情。不过，化身不会自然出现在任务中，
           <i>
-           need
+           必须
           </i>
-          to skulljack another codex in order to proceed with the story.
+          通过再次对另一个原典进行头颅接入来触发。
          </li>
          <li>
-          Any attempt to skulljack an enemy to progress the story will always succeed, even though it will say you only have a 70% to hit. This is actually the only time that LWOTC cheats any hit chances.
+          任何用于推进剧情的头颅接入尝试都会必定命中，即使界面上显示只有70%命中率。这是LWOTC唯一会作弊命中率的情况。
          </li>
         </ul>
        </li>
        <li>
         <b>
-         Network Tower
+         网络塔
         </b>
-        : The fourth mission of the liberation chain is the first golden path mission you are likely to complete. It does not matter which region you complete this mission in, once you complete it for the first time, you will reveal the Blacksite mission.
+        ：这是解放任务链的第四个任务，也是你最可能完成的第一个黄金主线任务。完成任意区域的该任务后，将解锁黑地任务。
        </li>
        <li>
         <b>
-         Assault ADVENT HQ
+         突袭变种人总部
         </b>
-        : The fifth mission of the liberation chain to free a region from ADVENT's control. It does not matter which region you complete this mission in and only one is required. Losing a region from an invasion does not require you to liberate another region to complete this objective.
+        ：这是解放任务链的第五个任务，用于完全解放一个区域。只需完成一次即可，与在哪个具体区域完成无关。即使该区域后来被敌人重新控制，也无需重新解放。
        </li>
        <li>
         <b>
-         Blacksite
+         黑地
         </b>
-        : XCOM must infiltrate an ADVENT facility and retrieve a vial before escaping. You will encounter 27/31/31/36 enemies (depending on difficulty) on the map. Once you grab the vial, you must travel back to the fixed evac where the squad was dropped off and reinforcements will begin dropping.
+        ：XCOM必须渗透变种人的设施并取回一个样本瓶后撤离。地图上将出现27/31/31/36名敌人（取决于难度）。取得样本瓶后，必须返回固定撤离点，敌方增援将开始降落。
         <ul>
          <li>
-          Note that after 45 turns, doom reinforcements will start coming in hot, whether you have retrieved the vial or not.
+          注意：45回合后，即使未取得样本瓶，也会开始出现末日增援。
          </li>
          <li>
           <i>
-           Unlocked
+           解锁方式
           </i>
-          : This mission is unlocked by completing a Liberation 4 Regional Network Tower mission and contacting the region with the blacksite.
+          ：完成一次区域网络塔任务并联络黑地所在的区域。
          </li>
         </ul>
        </li>
        <li>
         <b>
-         Forge
+         锻造厂
         </b>
-        : XCOM investigates the coordinates found by researching the blacksite vial. Another facility awaits you, this time with 35/35-36/35-36/47 enemies (depending on difficulty). You must cross a bridge, reach the center of the facility, and recover the body before retreating to the evac. Guarding the bridge is a guaranteed Sectopod, often the first one encountered in a campaign.
+        ：XCOM调查通过研究黑地样本瓶获得的坐标后，地图上会出现另一处设施等待调查，敌人数量为35/35-36/35-36/47（取决于难度）。XCOM需要穿越一座桥，到达设施中心并取回尸体后撤离。桥上会有一台破坏者，通常是战役中首次遇到。
         <ul>
          <li>
           <i>
-           Unlocked
+           解锁方式
           </i>
-          : This mission is unlocked by researching the blacksite vial in the shadow chamber and contacting the region with the forge.
+          ：在暗影舱研究黑地样本瓶（小黑瓶）并联络锻造厂所在地区。
          </li>
         </ul>
        </li>
        <li>
         <b>
-         Psi Gate
+         灵能门
         </b>
-        : XCOM investigates the location of a strange psionic gateway. You must fight through the numerous guards until you reach the gateway in which a Gatekeeper will be guarding it along with some followers. In addition, there are several Chryssalids scattered throughout the area. In total, you will encounter 31/38/38/44 enemies (depending on difficulty).
+        : XCOM调查一个奇异的灵能传送门的位置。你必须击败大量守卫后抵达传送门，那里有一只守门人及其随从。此外，任务区域内还分布着若干寄生兽。总敌人数量为31/38/38/44（取决于难度）。
         <ul>
          <li>
           <i>
-           Unlocked
+           解锁方式
           </i>
-          : This mission is unlocked by researching the codex brain in the shadow chamber and contacting the region with the psi gate.
+          ：在暗影舱研究解密原典脑数据并联络灵能门所在地区。
          </li>
         </ul>
        </li>
        <li>
         <b>
-         Central Network Broadcast
+         中央信号塔
         </b>
-        : The penultimate mission of the game. XCOM has to infiltrate yet another network tower, but this time it's bigger and badder than before. There are 34/37/37/41 enemies to encounter, in addition to reinforcements. However, unlike a regional network broadcast, you do not need to actually kill all the enemies as the goal is to hack and disrupt the tower.
+        ：游戏主线倒数第二个任务。XCOM需要再次渗透网络塔，但这次规模更大、难度更高。将遭遇34/37/37/41名敌人（取决于难度），并且还会有增援。与地区网络塔不同，你不需要杀光所有敌人，目标是入侵并干扰网络塔。
         <ul>
          <li>
-          Note that this mission is full salvage, but only for the enemies that you actually kill, so if you need any corpses to build any last items before taking on waterworld (you won't get to research anything), you should make sure to kill that enemy before hacking the tower and ending the mission.
+          注意：此任务为全面回收，但仅针对你实际击杀的敌人。如果你需要某些尸体来制造最终物品（之后将无法再研究），必须在黑入网络塔并结束任务前击杀该敌人。
          </li>
          <li>
           <i>
-           Unlocked
+           解锁方式
           </i>
-          : This mission is unlocked immediately after completing the Avatar Autopsy in the shadow chamber.
+          ：在暗影舱完成化身尸检后立即解锁。
          </li>
         </ul>
        </li>
        <li>
         <b>
-         Waterworld
+         水世界（外星人要塞）
         </b>
-        : The ultimate mission of the game. This mission is composed of 2 maps. In the first, you will face a Gatekeeper and a Sectopod, as well as a host of other powerful enemies. In the second, you will face off against multiple avatars, as well as continuous reinforcements summoned from the various raised areas around the map.
+        ：游戏的最终任务，由两个地图组成。第一部分，你将面对一个守门人、一台破坏者，以及多种强敌。第二部分，你将面对多个化身以及从地图各高台持续传送的增援。
         <ul>
          <li>
           <i>
-           Unlocked
+           解锁方式
           </i>
-          : This mission is unlocked immediately after completing the Central Network Broadcast.
+          ：完成中央信号塔任务后立即解锁。
          </li>
         </ul>
        </li>
@@ -1914,55 +1936,55 @@
       </p>
       <h2>
        <span class="mw-headline" id="Collecting_Enemy_Corpses">
-        Collecting Enemy Corpses
+        收集敌人尸体
        </span>
       </h2>
       <p>
-       Long War 2 uses the correct term for military equipment and supplies:
+       在Long War 2中，使用了军事术语
        <a class="external text" href="https://en.wikipedia.org/wiki/Materiel" rel="nofollow" target="_blank">
-        materiel
+        军需物资（materiel）
        </a>
-       .
+       来指代装备和补给。
       </p>
       <p>
-       Most missions in Long War 2 require you to evacuate and you do not keep the bodies of fallen ADVENT or Aliens. As corpses are much more valuable in Long War 2 players should make special consideration for missions which do allow them to keep the corpses of fallen foes.
+       大多数Long War 2任务要求你撤离，因此无法保留被击败的变种人或外星人尸体。由于尸体在Long War 2中具有更高价值，玩家应特别关注那些允许获取敌方尸体的任务。
       </p>
       <p>
-       The following mission types allow collection of enemy materiel:
+       以下任务类型允许收集敌方物资（包括尸体）：
       </p>
       <ul>
        <li>
-        Ambush troop column: Ambush a small ADVENT troop column and clear the area of hostiles, Succeeding this will reduce the region's strength by 1. Can only be detected if the region is at least of strength 4.
+        伏击列队：伏击一支小型变种人部队并清除所有敌人。成功将使该区域的兵力降低1点。该任务仅在区域兵力等级达到4级及以上时可被侦测。
        </li>
        <li>
-        Supply convoy ambush: Disrupt Advent supply transports and destroy ADVENT troops. Succeeding this will prevent strength from being transported into the region but greatly increase vigilance.
+        伏击补给车队：扰乱变种人的补给运输并消灭其部队。成功将阻止兵力流入该区域，但会大幅提升地区警戒。
        </li>
        <li>
-        Invasion: Advent attempts to re-establish their psionic network in the region and launches a full scale attack against the resistance. You must clear the area of hostiles and rescue any resistance leaders while also defending against continuous reinforcements until the emitter is destroyed.
+        入侵：变种人试图在该区域重建灵能网络，发动全面进攻。你必须清除敌人，营救反抗军成员，同时抵御源源不断的援军，直到摧毁信号发射器。
        </li>
        <li>
-        Rendezvous: Disrupt an ADVENT rendezvous with the faceless spy. The assigned soldier advisor along with up to 5 resistance leaders joins to remove the spy while also eliminating their contacts.
+        锄奸：破坏变种人与潜伏的无面怪间谍的接头。分配到该区域的士兵顾问与最多5名反抗军一同行动，清除间谍及其联系人。
        </li>
        <li>
-        Regional HQ assault: Assault the regional HQ to remove the General in the region and reclaim the area from the aliens control and removing them from the region. If the General is eliminated all enemies will converge to your location in an attempt to eliminate you. This will also occur if there are less than 8 enemies left in the area.
+        地区总部突袭：突袭地区变种人总部，消灭该区域的变种人将军，夺回控制权并将变种人逐出该地。若将军被消灭，剩余敌人将全部冲向你的位置意图歼灭你；若地图内敌人数量低于8人也会触发此机制。
        </li>
        <li>
-        Secure UFO: Secure the landed UFO by eliminating all hostiles in the area. When revealed, a distress beacon is activated and must be stopped. Failure to do so will have reinforcements called in forcing a retreat and the inability to secure the UFO and its resources. Succeeding this will grant 1 avenger power while also preventing the aliens from increasing the global strength level.
+        肃清UFO：清除UFO降落区域内的所有敌人。当敌人被发现时，一个求救信标会被激活，必须及时阻止。若未能阻止信标，敌方援军将被召唤，迫使你撤退并失去夺取UFO及其物资的机会。任务成功将提供1点复仇者号动力，同时防止外星人提升全球兵力等级。
        </li>
       </ul>
       <p>
-       It should be noted that while Smash N Grab missions list Enemy Material as their reward, they no longer allow the collection of corpses from the battlefield. Unlike the five missions listed above, material recovered from Smash N Grabs is not dependent on the state of the battlefield, only on the number of ADVENT Resource Caches successfully retrieved. The Resource Caches can provide Alloys, Elerium, Elerium Cores, or Supplies, but not corpses.
+       注意：尽管“补给箱搜寻/夺取”任务中会列出“敌方物资”作为奖励，但该任务不再允许收集敌人尸体。与上面列出的任务不同，“补给箱搜寻/夺取”中获得的物资与战场状态无关，仅取决于成功回收了多少变种人资源箱。这些资源箱可能包含合金、超铀水晶、超铀核心或补给，但不会提供尸体。
       </p>
       <h3>
        <span class="mw-headline" id="Strategy">
-        Strategy
+        战术
        </span>
       </h3>
       <p>
-       As Vahlen has taught us, explosives destroy all recoverable materiel when delivering the killing blow as both a possible loot drop and the corpse will be destroyed. Flamethrowers also destroy corpses if the initial hit kills the target, though burning damage will leave a collectible corpse and drop timed loot if carried. Consider using the Needle Grenades perk for grenadiers if you are in need of explosives use.
+       正如Vahlen所教，如果用爆炸物击杀敌人，会摧毁所有可回收的物资，包括尸体和掉落的战利品。火焰喷射器若由初始伤害击杀敌人，也会摧毁尸体，但若敌人死于燃烧持续伤害，则仍可掉落尸体与战利品。如果需要使用爆炸物，建议为榴弹兵选择“刺针榴弹”技能来避免破坏尸体。
       </p>
       <p>
-       It may be beneficial to sabotage your infiltration percentage to increase the enemy presence if you feel you will be victorious. You are allowed to start any infiltration mission early from the Geoscape. Note that enemy readiness will also be boosted if you begin prematurely, increasing their detection range, evac delay, and reinforcements strength. For supply convoys, troop columns and UFOs, enemies also gain a flat aim and defense bonus with their HP multiplied based on infiltration in intervals of 25% (0-24/25-49/50-74/75-99). Although there is great reward in acquiring plenty of corpses, it is important to be wary of the great risks involved that may be more harmful than its worth.
+       你可以考虑故意降低渗透度以增加敌人数量（前提是你有信心取胜）。在大地图界面，你可以随时提前开始任务。但要注意：提前开始将提升敌人的警戒状态，增强其侦测范围、延迟你的撤离时间，并增加增援强度。对于补给车队、列队和UFO任务，敌人还会获得命中与防御加成，并依据渗透度（每25%一个档位）获得生命值加成（0-24%、25-49%、50-74%、75-99%）。尽管通过这些任务收集大量尸体极具回报，但也伴随着极大风险，请务必权衡利弊。
       </p>
       <!-- 
 NewPP limit report
