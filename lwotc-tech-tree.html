@@ -103,7 +103,7 @@
   #graph{width:100%; height:100%; display:block; touch-action:none; cursor:grab;
     user-select:none; -webkit-user-select:none; outline:none}
   #graph text, .node{user-select:none; -webkit-user-select:none}
-  #graph.dragging{cursor:grabbing}
+  #graph.dragging, #graph.dragging .node{cursor:grabbing}
   .hint{
     position:absolute; left:14px; bottom:12px; color:#66798b; font-size:11px;
     background:rgba(8,13,18,.72); padding:5px 8px; border-radius:5px;
@@ -245,7 +245,7 @@
         <g id="nodes"></g>
       </g>
     </svg>
-    <div class="hint">滚轮缩放 · 拖拽平移 · 点击节点查看详情 · 双击空白适应窗口</div>
+    <div class="hint">滚轮缩放 · 任意处拖拽平移 · 点击节点查看详情 · 双击空白适应窗口</div>
   </main>
   <aside class="details" id="details"></aside>
 </div>
@@ -575,8 +575,8 @@ function render(shouldFit) {
       (comboN ? "\n组合解锁: " + itemNames(t.combo_items) : "");
     nodeHtml += '<g class="node cat-' + t.cat + '" data-id="' + esc(t.id) +
       '" transform="translate(' + t.x + ',' + t.y + ')">' +
-      '<rect class="node-bg" width="236" height="58" rx="9"></rect>' +
-      '<rect class="node-stripe" width="5" height="58" rx="2.5"></rect>' +
+      '<rect class="node-bg" width="236" height="58" rx="4"></rect>' +
+      '<rect class="node-stripe" width="5" height="58" rx="1.5"></rect>' +
       '<text class="node-title" x="14" y="23">' + esc(trunc(t.display, 18)) + "</text>" +
       '<text class="node-sub" x="14" y="39">' + esc(trunc(t.id, 27)) + "</text>" +
       '<text class="node-cost" x="224" y="23" text-anchor="end">' + esc(cost) + "</text>" +
@@ -813,31 +813,54 @@ function zoomAt(factor, cx, cy) {
 
 let drag = null;
 let dragMoved = false;
+let suppressClick = false;  // 平移结束后浏览器补发的 click 不该选中/取消选中任何东西
+const DRAG_SLOP = 4;        // 位移在这个半径（px）内仍算点击，不算拖动
+function endDrag() {
+  if (!drag) return;
+  if (dragMoved) suppressClick = true;
+  drag = null;
+  dragMoved = false;
+  svg.classList.remove("dragging");
+}
 svg.addEventListener("pointerdown", e => {
   if (e.button !== 0) return;
-  if (e.target.closest && e.target.closest(".node")) return;
-  drag = { x: e.clientX, y: e.clientY, ox: state.view.x, oy: state.view.y };
+  // 每次手势开始都重置，否则上一次平移留下的标记会吃掉这一击
   dragMoved = false;
-  svg.setPointerCapture(e.pointerId);
-  svg.classList.add("dragging");
+  suppressClick = false;
+  const onNode = !!(e.target.closest && e.target.closest(".node"));
+  drag = {
+    x: e.clientX, y: e.clientY,
+    ox: state.view.x, oy: state.view.y,
+    pid: e.pointerId,
+    captured: !onNode
+  };
+  // 从节点上起手时先不抓 pointer：一旦 setPointerCapture，
+  // 连普通点击的 click 都会重定向到 <svg>，节点就永远选不中。
+  // 等真正越过阈值再抓，那时这个 click 本来也要被丢掉。
+  if (drag.captured) {
+    svg.setPointerCapture(e.pointerId);
+    svg.classList.add("dragging");
+  }
 });
 svg.addEventListener("pointermove", e => {
   if (!drag) return;
   const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
-  if (Math.abs(dx) + Math.abs(dy) > 3) dragMoved = true;
+  if (!dragMoved && dx * dx + dy * dy > DRAG_SLOP * DRAG_SLOP) {
+    dragMoved = true;
+    if (!drag.captured) {
+      drag.captured = true;
+      svg.setPointerCapture(drag.pid);
+    }
+    svg.classList.add("dragging");
+  }
+  if (!dragMoved) return;
   state.view.x = drag.ox + dx;
   state.view.y = drag.oy + dy;
   state.userMoved = true;
   applyView();
 });
-svg.addEventListener("pointerup", e => {
-  drag = null;
-  svg.classList.remove("dragging");
-});
-svg.addEventListener("pointercancel", () => {
-  drag = null;
-  svg.classList.remove("dragging");
-});
+window.addEventListener("pointerup", endDrag);
+window.addEventListener("pointercancel", endDrag);
 svg.addEventListener("wheel", e => {
   e.preventDefault();
   const factor = e.deltaY < 0 ? 1.12 : 0.89;
@@ -849,8 +872,10 @@ svg.addEventListener("dblclick", e => {
 });
 
 /* ---------- events ---------- */
-viewport.addEventListener("click", e => {
-  if (dragMoved) { dragMoved = false; return; }
+/* 挂在 <svg> 而不是 <g id="viewport">：点空白处时事件目标是 <svg> 自身，
+   它不会冒泡经过 viewport，所以之前点空白既不会取消选中，也不会清掉平移标记。 */
+svg.addEventListener("click", e => {
+  if (suppressClick) { suppressClick = false; return; }
   const g = e.target.closest ? e.target.closest(".node") : null;
   if (g) {
     selectNode(g.dataset.id);
