@@ -747,7 +747,7 @@ function ensureVisible(id) {
   }
 }
 
-function selectNode(id) {
+function selectNode(id, center) {
   if (!byId[id]) return;
   if (document.activeElement && document.activeElement.blur) {
     document.activeElement.blur();
@@ -758,27 +758,53 @@ function selectNode(id) {
   showDetails(id);
   applyHighlight();
   try { history.replaceState(null, "", "#" + encodeURIComponent(id)); } catch (e) {}
-  const t = byId[id];
-  if (t) {
-    const el = document.querySelector('.node[data-id="' + cssEscape(id) + '"]');
-    if (el && el.scrollIntoView) {
-      // SVG scrollIntoView is not useful; keep view unchanged.
-    }
-  }
+  if (center) centerOnNode(id);
 }
-function cssEscape(s) {
-  return String(s).replace(/["\\]/g, "\\$&");
+
+/* 把节点平移到画布中央（从搜索列表/详情面板选中时用）。
+   动画放进 rAF 里跑：ensureVisible() 触发重绘时会顺手排一个 fitView，
+   同一帧里 fitView 先执行，这里的首帧后执行，才不会被它覆盖。 */
+let viewAnim = 0;
+function cancelViewAnim() {
+  if (viewAnim) { cancelAnimationFrame(viewAnim); viewAnim = 0; }
 }
-function centerOnNode(id) {
+function easeInOut(t) {
+  return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+function centerOnNode(id, animate) {
   const n = (state.layout && state.layout.nodes || []).find(x => x.id === id);
   if (!n) return;
   const rect = svg.getBoundingClientRect();
-  const s = Math.max(state.view.s, 0.55);
-  state.view.s = s;
-  state.view.x = rect.width / 2 - (n.x + 118) * s;
-  state.view.y = rect.height / 2 - (n.y + 29) * s;
+  if (!rect.width || !rect.height) return;
+  const nx = n.x + 118, ny = n.y + 29;       // 节点中心（卡片 236×58）
+  const cx = rect.width / 2, cy = rect.height / 2;
   state.userMoved = true;
-  applyView();
+  cancelViewAnim();
+  const reduce = window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const dur = animate === false || reduce ? 0 : 320;
+  let from = null, t0 = 0, s1 = 0;
+  const step = now => {
+    if (!from) {
+      // 首帧才采样起点：这样前面排队的 fitView 已经生效
+      from = {
+        s: state.view.s,
+        px: state.view.x + state.view.s * nx,
+        py: state.view.y + state.view.s * ny
+      };
+      s1 = Math.max(from.s, 0.55);   // 已经放大的视图不缩回去
+      t0 = now;
+    }
+    const k = dur ? Math.min(1, (now - t0) / dur) : 1;
+    const e = easeInOut(k);
+    const s = from.s + (s1 - from.s) * e;
+    state.view.s = s;
+    state.view.x = from.px + (cx - from.px) * e - s * nx;
+    state.view.y = from.py + (cy - from.py) * e - s * ny;
+    applyView();
+    viewAnim = k < 1 ? requestAnimationFrame(step) : 0;
+  };
+  viewAnim = requestAnimationFrame(step);
 }
 
 /* ---------- view / pan / zoom ---------- */
@@ -800,6 +826,7 @@ function fitView() {
   applyView();
 }
 function zoomAt(factor, cx, cy) {
+  cancelViewAnim();
   const rect = svg.getBoundingClientRect();
   const mx = cx == null ? rect.width / 2 : cx - rect.left;
   const my = cy == null ? rect.height / 2 : cy - rect.top;
@@ -827,6 +854,7 @@ svg.addEventListener("pointerdown", e => {
   // 每次手势开始都重置，否则上一次平移留下的标记会吃掉这一击
   dragMoved = false;
   suppressClick = false;
+  cancelViewAnim();
   const onNode = !!(e.target.closest && e.target.closest(".node"));
   drag = {
     x: e.clientX, y: e.clientY,
@@ -868,6 +896,7 @@ svg.addEventListener("wheel", e => {
 }, { passive: false });
 svg.addEventListener("dblclick", e => {
   if (e.target.closest && e.target.closest(".node")) return;
+  cancelViewAnim();
   fitView();
 });
 
@@ -903,7 +932,7 @@ viewport.addEventListener("pointerout", e => {
 detailsEl.addEventListener("click", e => {
   const b = e.target.closest ? e.target.closest("[data-goto]") : null;
   if (!b) return;
-  selectNode(b.dataset.goto);
+  selectNode(b.dataset.goto, true);
 });
 
 searchEl.addEventListener("input", () => {
@@ -929,13 +958,17 @@ clearEl.addEventListener("click", () => {
 searchResultsEl.addEventListener("click", e => {
   const row = e.target.closest ? e.target.closest("[data-result]") : null;
   if (!row) return;
-  const id = row.dataset.result;
-  selectNode(id);
-  centerOnNode(id);
+  selectNode(row.dataset.result, true);
 });
 
-document.getElementById("btn-fit").addEventListener("click", fitView);
-document.getElementById("btn-reset").addEventListener("click", fitView);
+document.getElementById("btn-fit").addEventListener("click", () => {
+  cancelViewAnim();
+  fitView();
+});
+document.getElementById("btn-reset").addEventListener("click", () => {
+  cancelViewAnim();
+  fitView();
+});
 document.getElementById("btn-zoom-in").addEventListener("click", () => zoomAt(1.2));
 document.getElementById("btn-zoom-out").addEventListener("click", () => zoomAt(1 / 1.2));
 document.getElementById("btn-main").addEventListener("click", () => {
@@ -967,7 +1000,7 @@ if (initialQuery) {
 }
 const initialHash = decodeURIComponent(location.hash.slice(1));
 if (initialHash && byId[initialHash]) {
-  selectNode(initialHash);
+  selectNode(initialHash, true);
 }
 </script>
 </body>
